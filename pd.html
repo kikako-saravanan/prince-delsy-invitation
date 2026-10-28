@@ -1,0 +1,1472 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prince &amp; Delsy</title>
+<meta name="description" content="You are invited to the wedding of J. Prince Solomon and S. Delsy Merlyn · Friday, 20 November 2026, 5 PM · Pallavaram, Chennai">
+<meta property="og:title" content="Prince &amp; Delsy · Wedding Invitation">
+<meta property="og:description" content="Friday, 20 November 2026, 5 PM · ECI St. Paul Church, Pallavaram, Chennai. Tap to open your invitation 🦋">
+<meta property="og:type" content="website">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400;1,6..96,500&family=Pinyon+Script&family=Mulish:wght@400;500;700&family=Noto+Serif+Tamil:wght@400;600&family=Noto+Serif+Kannada:wght@400;600&family=Noto+Serif+Malayalam:wght@400;600&family=Noto+Serif+Telugu:wght@400;600&family=Noto+Serif+Devanagari:wght@400;600&display=swap">
+<style>
+/* Layout: an invitation that opens like a pair of wings, then one narrow column of paper sections that a few butterflies wander across. */
+:root{
+  color-scheme: light;
+  --paper:#F5F8FC;
+  --paper-2:#E6EEF9;
+  --ink:#14274A;
+  --ink-soft:#4F6286;
+  --wing:#2F62C8;
+  --wing-light:#AFC9F1;
+  --gold:#B08436;
+  --line:rgba(20,39,74,.16);
+  --f-display:"Bodoni Moda","Didot","Bodoni 72",Georgia,serif;
+  --f-script:"Pinyon Script","Snell Roundhand","Apple Chancery",cursive;
+  --f-body:"Mulish","Segoe UI",system-ui,sans-serif;
+  --f-tamil:"Noto Serif Tamil","Latha","Tamil Sangam MN",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+html.locked{overflow:hidden}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--f-body);
+  font-size:16px;line-height:1.65;
+  background-image:
+    radial-gradient(60vmax 40vmax at 110% -5%, rgba(175,201,241,.55), transparent 60%),
+    radial-gradient(50vmax 40vmax at -15% 35%, rgba(175,201,241,.35), transparent 60%),
+    radial-gradient(50vmax 40vmax at 115% 75%, rgba(175,201,241,.30), transparent 60%);
+  background-attachment:fixed;
+  overflow-x:hidden;
+}
+html:not([lang="en"]) .en, html[lang="en"] .ta{display:none !important}
+/* .ta elements hold the chosen Indian language; each script gets its own Noto Serif face */
+html[lang="kn"]{--f-tamil:"Noto Serif Kannada","Tunga",serif}
+html[lang="ml"]{--f-tamil:"Noto Serif Malayalam","Kartika",serif}
+html[lang="te"]{--f-tamil:"Noto Serif Telugu","Gautami",serif}
+html[lang="hi"]{--f-tamil:"Noto Serif Devanagari","Mangal",serif}
+html:not([lang="en"]) .ta{letter-spacing:0 !important}
+x-t{display:inline}
+.ta{font-family:var(--f-tamil)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--wing);outline-offset:3px;border-radius:4px}
+
+/* ---------- butterflies layer ---------- */
+#sky{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:60}
+
+/* ---------- language toggle ---------- */
+.lang{
+  position:fixed;z-index:70;
+  top:calc(12px + env(safe-area-inset-top,0px));
+  right:calc(12px + env(safe-area-inset-right,0px));
+  font:600 13px/1 var(--f-body);letter-spacing:.04em;
+  background:rgba(245,248,252,.85);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+  color:var(--ink);border:1px solid var(--line);border-radius:999px;
+  padding:9px 14px;cursor:pointer;
+}
+select.lang{-webkit-appearance:none;appearance:none;padding-right:32px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%2314274A' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 13px center}
+
+/* ---------- gate ---------- */
+.gate{position:fixed;inset:0;z-index:50;perspective:1600px;display:grid;place-items:center}
+.gate .half{
+  position:absolute;top:0;bottom:0;width:50.5%;
+  background:
+    radial-gradient(70% 50% at 20% 15%, rgba(175,201,241,.65), transparent 70%),
+    radial-gradient(60% 40% at 30% 95%, rgba(47,98,200,.18), transparent 70%),
+    var(--paper);
+  backface-visibility:hidden;
+}
+.gate .half.l{left:0;transform-origin:left center;border-right:1px solid rgba(176,132,54,.5)}
+.gate .half.r{right:0;transform-origin:right center;transform:scaleX(1);
+  background:
+    radial-gradient(70% 50% at 80% 15%, rgba(175,201,241,.65), transparent 70%),
+    radial-gradient(60% 40% at 70% 95%, rgba(47,98,200,.18), transparent 70%),
+    var(--paper)}
+.gate .veins{position:absolute;inset:0;width:100%;height:100%;opacity:.35}
+.gate-content{
+  position:relative;z-index:2;text-align:center;display:grid;gap:18px;justify-items:center;
+  padding:24px max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px));
+  transition:opacity .6s ease, transform .9s ease;
+}
+.gate-kicker{font:600 12px/1 var(--f-body);letter-spacing:.32em;text-transform:uppercase;color:var(--ink-soft)}
+.gate-kicker.ta{letter-spacing:.05em;font-size:14px;font-family:var(--f-tamil)}
+.gate-names{font:italic 400 clamp(42px,11vw,84px)/1 var(--f-display);margin:0;text-wrap:balance}
+.gate-names .amp{font-family:var(--f-script);font-style:normal;color:var(--gold);font-size:.8em;padding:0 .12em}
+.seal{
+  width:132px;height:132px;border-radius:50%;cursor:pointer;border:0;padding:0;
+  background:radial-gradient(circle at 35% 30%, #3E74D8, var(--wing) 45%, #1D428F 100%);
+  box-shadow:0 14px 30px -10px rgba(20,39,74,.55), inset 0 0 0 6px rgba(255,255,255,.12), inset 0 0 0 7px rgba(176,132,54,.7);
+  color:#F5F8FC;display:grid;place-items:center;position:relative;
+  animation:breathe 3.2s ease-in-out infinite;
+}
+.seal span{font:400 56px/1 var(--f-script);transform:translateY(4px)}
+.seal::after{content:"";position:absolute;inset:-10px;border-radius:50%;border:1px solid rgba(47,98,200,.35);animation:ripple 3.2s ease-out infinite}
+@keyframes breathe{50%{transform:scale(1.04)}}
+@keyframes ripple{from{transform:scale(.9);opacity:1}to{transform:scale(1.35);opacity:0}}
+.gate-hint{font:500 14px/1.4 var(--f-body);color:var(--ink-soft)}
+.gate-guest{margin:0;font:400 clamp(26px,6.5vw,38px)/1.2 var(--f-script);color:var(--gold);text-wrap:balance}
+.gate-guest.ta{font:600 clamp(18px,4.6vw,24px)/1.5 var(--f-tamil)}
+.gate-date{font:500 15px/1 var(--f-display);letter-spacing:.3em;color:var(--ink)}
+/* the two cover halves are wings: two flaps, then they lift off the screen */
+.gate.open .half.l{animation:wingL 1.7s cubic-bezier(.45,.05,.3,1) forwards}
+.gate.open .half.r{animation:wingR 1.7s cubic-bezier(.45,.05,.3,1) forwards}
+@keyframes wingL{
+  0%{transform:none}
+  18%{transform:rotateY(-55deg)}
+  32%{transform:rotateY(-12deg)}
+  50%{transform:rotateY(-70deg)}
+  100%{transform:rotateY(-80deg) translate3d(-10%,-120%,0) rotateZ(-14deg);opacity:0}}
+@keyframes wingR{
+  0%{transform:none}
+  18%{transform:rotateY(55deg)}
+  32%{transform:rotateY(12deg)}
+  50%{transform:rotateY(70deg)}
+  100%{transform:rotateY(80deg) translate3d(10%,-120%,0) rotateZ(14deg);opacity:0}}
+#motes{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.gate-content{width:100%;max-width:100vw;min-width:0}
+.gate-names{width:100%}
+.gate-names .ink{display:inline-block;padding:0 .1em;
+  -webkit-mask-image:linear-gradient(90deg,#000 44%,transparent 56%);mask-image:linear-gradient(90deg,#000 44%,transparent 56%);
+  -webkit-mask-size:250% 100%;mask-size:250% 100%;-webkit-mask-position:0 0;mask-position:0 0;
+  animation:write 2.6s cubic-bezier(.45,0,.25,1) .35s backwards}
+@keyframes write{from{-webkit-mask-position:100% 0;mask-position:100% 0}}
+.seal-wrap{position:relative;width:132px;height:132px}
+.seal-ring{position:absolute;inset:-14px;width:160px;height:160px;transform:rotate(-90deg);pointer-events:none}
+.seal-ring circle{fill:none;stroke:var(--gold);stroke-width:2;stroke-linecap:round;stroke-dasharray:465;stroke-dashoffset:465}
+.gate.charging .seal{animation:none;transform:scale(.94);transition:transform .9s ease}
+.gate.charging .seal::after{animation:none;opacity:0}
+.gate-left{margin:-8px 0 0;font:500 13px/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.gate-left b{font:400 22px/1 var(--f-display);letter-spacing:0;color:var(--ink);margin-right:6px;vertical-align:-2px}
+.gate-left .ta{letter-spacing:0;text-transform:none;font-family:var(--f-tamil);font-size:14px}
+@media (prefers-reduced-motion: reduce){
+  .gate-names .ink{animation:none}
+  .gate.open .half{animation:none;opacity:0;transition:opacity .4s}
+}
+.gate.open .gate-content{opacity:0;transform:scale(.92)}
+.gate.gone{display:none}
+
+/* ---------- shared ---------- */
+main{position:relative;z-index:1}
+.wrap{
+  max-width:1080px;margin:0 auto;
+  padding-left:max(20px,env(safe-area-inset-left,0px));
+  padding-right:max(20px,env(safe-area-inset-right,0px));
+}
+section{padding-block:clamp(64px,11vw,128px)}
+.eyebrow{font:700 12px/1 var(--f-body);letter-spacing:.28em;text-transform:uppercase;color:var(--wing);display:flex;align-items:center;gap:12px;margin:0 0 18px}
+.eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
+.eyebrow.ta{letter-spacing:.04em;font-size:14px;text-transform:none}
+h2{font:italic 400 clamp(36px,7vw,64px)/1.05 var(--f-display);margin:0 0 20px;text-wrap:balance}
+h2.ta{font:600 clamp(26px,5vw,40px)/1.35 var(--f-tamil);font-style:normal}
+.lede{color:var(--ink-soft);max-width:58ch;margin:0}
+
+/* ---------- hero ---------- */
+.hero{padding-block:calc(72px + env(safe-area-inset-top,0px)) 40px}
+.hero-grid{display:grid;gap:28px;align-items:center}
+.verse{display:flex;align-items:center;gap:10px;font:italic 400 16px/1.4 var(--f-display);color:var(--ink-soft);margin:0 0 26px}
+.verse.ta{font:400 15px/1.5 var(--f-tamil)}
+.verse svg{flex:none}
+.names{margin:0;font-family:var(--f-display);font-weight:400;line-height:.86;letter-spacing:-.02em}
+.names .n{display:block;font-size:clamp(78px,21vw,168px);font-style:italic}
+.names .n2{padding-left:.55em}
+/* gold-foil sheen sweeping across the names */
+.names .n{color:var(--ink);
+  background:linear-gradient(105deg,var(--ink) 0 40%,#C9A15A 46%,#F6E3B4 50%,#C9A15A 54%,var(--ink) 60% 100%) 0 0/250% 100% no-repeat;
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  animation:foil 7s ease-in-out infinite}
+.names .n2{animation-delay:.5s}
+/* the clipped background only paints inside the box: extend it under the "y" descender and the italic overhang */
+.names .n{padding-bottom:.24em;margin-bottom:-.24em;padding-right:.18em;margin-right:-.18em}
+@keyframes foil{0%,55%{background-position:100% 0}100%{background-position:0 0}}
+@media (prefers-reduced-motion: reduce){.names .n{animation:none;background:none;-webkit-text-fill-color:currentColor}}
+.names .amp{display:block;font:400 clamp(44px,11vw,84px)/1 var(--f-script);color:var(--gold);margin:.06em 0 -.12em .9em}
+.full{margin:26px 0 0;font:500 15px/1.5 var(--f-body);color:var(--ink-soft);letter-spacing:.02em}
+.dateline{margin:22px 0 0;display:flex;flex-wrap:wrap;gap:8px 18px;align-items:baseline}
+.dateline .big{font:600 clamp(22px,4.5vw,30px)/1 var(--f-display);letter-spacing:.06em}
+.dateline .small{font:500 14px/1.4 var(--f-body);color:var(--ink-soft)}
+.dateline .small.ta{font-family:var(--f-tamil)}
+.hero-photo{position:relative;margin:0;justify-self:center;width:min(100%,460px);transform:perspective(900px) rotateX(var(--tx,0deg)) rotateY(var(--ty,0deg));transition:transform .6s cubic-bezier(.2,.7,.2,1);will-change:transform}
+.hero-photo img{display:block;width:100%;height:auto;
+  -webkit-mask-image:radial-gradient(75% 70% at 50% 45%, #000 62%, transparent 100%);
+          mask-image:radial-gradient(75% 70% at 50% 45%, #000 62%, transparent 100%)}
+.hero-photo .ring{position:absolute;inset:6% 4% 10%;border:1px solid rgba(176,132,54,.45);border-radius:50% 50% 46% 46%/42% 42% 58% 58%;pointer-events:none}
+.scroll-cue{display:flex;align-items:center;gap:10px;margin-top:34px;font:600 12px/1 var(--f-body);letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none}
+.scroll-cue.ta{letter-spacing:.03em;font-size:13px;text-transform:none}
+.scroll-cue i{width:1px;height:34px;background:linear-gradient(var(--ink-soft),transparent);display:block}
+
+/* ---------- invitation ---------- */
+.invite{text-align:center}
+.invite .lede{margin:0 auto}
+.couple-row{display:grid;gap:28px;margin-top:48px;align-items:start}
+.person h3{font:400 clamp(30px,6vw,44px)/1.1 var(--f-display);margin:0}
+.person h3 small{font:500 13px/1 var(--f-body);color:var(--ink-soft);letter-spacing:.04em;margin-left:4px}
+.person h3.ta{font:600 clamp(24px,5vw,32px)/1.3 var(--f-tamil)}
+.person .work{margin:6px 0 0;color:var(--ink-soft);font-size:15px}
+.person .parents{margin:14px 0 0;font:italic 400 18px/1.5 var(--f-display)}
+.person .parents span{display:block;font:600 11px/1 var(--f-body);font-style:normal;letter-spacing:.24em;text-transform:uppercase;color:var(--wing);margin-bottom:8px}
+.with{font:400 52px/1 var(--f-script);color:var(--gold)}
+.with.ta{font:400 22px/1 var(--f-tamil)}
+.tamil-letter{max-width:62ch;margin:48px auto 0;font:400 16.5px/2 var(--f-tamil);color:var(--ink);text-align:center}
+.tamil-letter b{font-weight:600}
+
+/* ---------- countdown ---------- */
+.count-grid{display:grid;gap:36px;align-items:center}
+.clock{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:28px}
+.unit{border-top:1px solid var(--ink);padding-top:12px}
+.unit b{display:block;font:400 clamp(40px,10vw,72px)/1 var(--f-display);font-variant-numeric:tabular-nums lining-nums;letter-spacing:-.02em}
+.unit span{font:600 11px/1 var(--f-body);letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+.unit span.ta{font:500 13px/1.2 var(--f-tamil);letter-spacing:0;text-transform:none}
+.count-done{font:italic 400 26px/1.3 var(--f-display);margin-top:24px}
+.hands{margin:0;position:relative}
+.hands img{display:block;width:100%;height:auto;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+          mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.hands figcaption{font:italic 400 17px/1.4 var(--f-display);color:var(--ink-soft);text-align:center;margin-top:6px}
+
+/* ---------- journey ---------- */
+.journey-art{position:relative;margin-top:36px;max-width:640px;margin-inline:auto}
+.journey-art svg{display:block;width:100%;height:auto;overflow:visible}
+.journey-art .path{fill:none;stroke:var(--wing);stroke-width:1.4;stroke-dasharray:3 6;stroke-linecap:round}
+.journey-art .place{font:700 10px var(--f-body);letter-spacing:.2em;text-transform:uppercase;fill:var(--ink-soft)}
+.journey-art .who{font:italic 400 22px var(--f-display);fill:var(--ink)}
+.journey-art .meet{font:400 15px var(--f-display);fill:var(--paper);letter-spacing:.08em}
+.journey-notes{display:grid;gap:22px;margin-top:28px}
+.note{border-left:1px solid var(--gold);padding-left:16px}
+.note h3{margin:0;font:italic 400 24px/1.2 var(--f-display)}
+.note p{margin:4px 0 0;color:var(--ink-soft);font-size:15px}
+.note p.ta{font-family:var(--f-tamil)}
+
+/* ---------- events ---------- */
+.tickets{display:grid;gap:22px;margin-top:40px}
+.ticket{
+  position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);
+  background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  box-shadow:0 20px 40px -28px rgba(20,39,74,.45);
+}
+.ticket .time{padding:24px 20px;border-right:1px dashed var(--line);display:grid;align-content:center;justify-items:center;min-width:104px;background:linear-gradient(180deg,rgba(175,201,241,.35),transparent)}
+.ticket .time b{font:400 44px/1 var(--f-display);font-variant-numeric:lining-nums}
+.ticket .time span{font:700 11px/1 var(--f-body);letter-spacing:.24em;color:var(--ink-soft);margin-top:6px}
+.ticket .time span.ta{font:500 13px/1 var(--f-tamil);letter-spacing:0}
+.ticket .body{padding:22px 22px 20px;min-width:0}
+.ticket .kind{font:700 11px/1 var(--f-body);letter-spacing:.24em;text-transform:uppercase;color:var(--wing);margin:0}
+.ticket .kind.ta{font:600 13px/1.2 var(--f-tamil);letter-spacing:0}
+.ticket h3{font:400 clamp(22px,4.4vw,28px)/1.2 var(--f-display);margin:8px 0 6px;text-wrap:balance}
+.ticket h3.ta{font:600 19px/1.5 var(--f-tamil)}
+.ticket address{font-style:normal;color:var(--ink-soft);font-size:15px}
+.ticket address.ta{font-family:var(--f-tamil)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;text-decoration:none;cursor:pointer;
+  font:700 13px/1 var(--f-body);letter-spacing:.04em;
+  padding:11px 16px;border-radius:999px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);
+  transition:transform .2s ease, background .2s ease;
+}
+.btn:hover{transform:translateY(-1px);background:var(--wing);border-color:var(--wing)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:var(--paper-2);color:var(--ink);border-color:var(--ink)}
+.btn .ta{font-family:var(--f-tamil);font-weight:600;letter-spacing:0}
+.btn svg{flex:none}
+.notch::before,.notch::after{content:"";position:absolute;left:94px;width:20px;height:20px;border-radius:50%;background:var(--paper);border:1px solid var(--line)}
+.notch::before{top:-11px}.notch::after{bottom:-11px}
+
+/* ---------- ring moment ---------- */
+.moment{display:grid;gap:28px;align-items:center}
+.moment figure{margin:0;justify-self:center;width:min(100%,360px)}
+.moment img{display:block;width:100%;height:auto;mix-blend-mode:multiply;
+  -webkit-mask-image:radial-gradient(70% 70% at 50% 45%, #000 60%, transparent 100%);
+          mask-image:radial-gradient(70% 70% at 50% 45%, #000 60%, transparent 100%)}
+.moment blockquote{margin:0;font:italic 400 clamp(30px,6vw,52px)/1.15 var(--f-display);text-wrap:balance}
+.moment blockquote.ta{font:600 clamp(22px,4.5vw,32px)/1.5 var(--f-tamil);font-style:normal}
+.moment blockquote em{font-family:var(--f-script);font-style:normal;color:var(--gold)}
+
+/* ---------- wishes ---------- */
+.wishes{text-align:center}
+.wishes .lede{margin:0 auto}
+.wishes .actions{justify-content:center;margin-top:26px}
+.contacts{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:22px}
+.chip{display:inline-flex;align-items:center;gap:10px;padding:8px 8px 8px 16px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.6);font:600 15px/1 var(--f-body);font-variant-numeric:tabular-nums;user-select:all}
+.chip .who{font:italic 400 17px/1 var(--f-display);color:var(--gold);margin-right:2px}
+.chip button{font:700 11px/1 var(--f-body);letter-spacing:.1em;text-transform:uppercase;border:0;border-radius:999px;padding:8px 10px;background:var(--paper-2);color:var(--ink);cursor:pointer}
+footer{padding-block:48px calc(56px + env(safe-area-inset-bottom,0px));text-align:center;border-top:1px solid var(--line)}
+footer .mono{font:400 48px/1 var(--f-script);color:var(--wing)}
+footer p{margin:10px auto 0;max-width:52ch;color:var(--ink-soft);font-size:15px}
+footer p.ta{font-family:var(--f-tamil)}
+.toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);opacity:0;z-index:80;
+  background:var(--ink);color:var(--paper);font:600 14px/1 var(--f-body);padding:12px 18px;border-radius:999px;transition:.3s ease;pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* reveal: visible at rest, gentle rise when observed */
+.rise{transition:transform .9s cubic-bezier(.2,.7,.2,1), opacity .9s ease}
+.js .rise.pending{transform:translateY(22px);opacity:.25}
+
+@media (min-width:760px){
+  .hero-grid{grid-template-columns:1.15fr .85fr}
+  .couple-row{grid-template-columns:1fr auto 1fr}
+  .with{align-self:center}
+  .count-grid{grid-template-columns:1fr 1fr}
+  .tickets{grid-template-columns:1fr 1fr}
+  .journey-notes{grid-template-columns:1fr 1fr}
+  .moment{grid-template-columns:.8fr 1.2fr}
+  .ticket .time{min-width:120px}
+  .notch::before,.notch::after{left:110px}
+  .note-card{grid-template-columns:auto 1fr}
+}
+
+/* ---------- music ---------- */
+#yt{position:fixed;left:0;bottom:0;width:200px;height:200px;opacity:0;pointer-events:none;z-index:-1;overflow:hidden}
+.music{
+  position:fixed;z-index:70;
+  right:calc(14px + env(safe-area-inset-right,0px));
+  bottom:calc(16px + env(safe-area-inset-bottom,0px));
+  display:inline-flex;align-items:center;gap:10px;cursor:pointer;
+  background:var(--ink);color:var(--paper);border:0;border-radius:999px;
+  padding:11px 16px 11px 14px;font:700 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;
+  box-shadow:0 12px 26px -12px rgba(20,39,74,.7);
+}
+.music[hidden]{display:none}
+.bars{display:inline-flex;align-items:flex-end;gap:2px;height:14px}
+.bars i{width:3px;height:4px;background:var(--wing-light);border-radius:2px;transition:height .3s}
+.music.on .bars i{animation:eq 1s ease-in-out infinite}
+.music.on .bars i:nth-child(2){animation-delay:-.3s}
+.music.on .bars i:nth-child(3){animation-delay:-.6s}
+.music.on .bars i:nth-child(4){animation-delay:-.15s}
+@keyframes eq{0%,100%{height:4px}50%{height:14px}}
+
+/* ---------- scratch to reveal ---------- */
+.reveal-sec{text-align:center}
+.reveal-sec .lede{margin:0 auto}
+.scratch{position:relative;margin:36px auto 0;width:min(100%,520px);aspect-ratio:1.55;max-width:100%;border-radius:24px;overflow:hidden;
+  box-shadow:0 30px 60px -30px rgba(20,39,74,.55);border:1px solid rgba(176,132,54,.5)}
+.scratch-under{position:absolute;inset:0;display:grid;place-content:center;gap:4px;
+  background:radial-gradient(80% 90% at 50% 0%, rgba(175,201,241,.7), transparent 70%), #fff}
+.scratch-under .day{font:700 12px/1 var(--f-body);letter-spacing:.32em;text-transform:uppercase;color:var(--wing)}
+.scratch-under .day.ta{font:600 15px/1 var(--f-tamil);letter-spacing:0;text-transform:none}
+.scratch-under .num{font:italic 400 clamp(84px,24vw,140px)/.95 var(--f-display);color:var(--ink)}
+.scratch-under .month{font:400 clamp(22px,5vw,30px)/1.2 var(--f-display);letter-spacing:.12em}
+.scratch-under .month.ta{font:600 20px/1.4 var(--f-tamil);letter-spacing:0}
+.scratch-under .hr{font:500 14px/1.4 var(--f-body);color:var(--ink-soft);margin-top:6px}
+.scratch-under .hr.ta{font-family:var(--f-tamil)}
+#scratchCv{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:grab;transition:opacity .9s ease}
+#scratchCv.done{opacity:0;pointer-events:none}
+.scratch-hint{margin-top:14px;font:500 14px/1.4 var(--f-body);color:var(--ink-soft)}
+.scratch-hint.ta{font-family:var(--f-tamil)}
+
+/* ---------- gallery ---------- */
+.gallery{margin-top:34px;position:relative}
+.track{display:grid;grid-auto-flow:column;grid-auto-columns:min(82%,420px);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding-bottom:8px;scrollbar-width:none;-webkit-overflow-scrolling:touch;overscroll-behavior-x:contain}
+.track::-webkit-scrollbar{display:none}
+.slide{scroll-snap-align:center;margin:0;background:#fff;border-radius:20px;padding:12px 12px 16px;border:1px solid var(--line);
+  box-shadow:0 18px 40px -28px rgba(20,39,74,.5)}
+.slide .ph{aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:var(--paper)}
+.slide img{width:100%;height:100%;object-fit:cover;display:block}
+.slide figcaption{font:italic 400 18px/1.35 var(--f-display);margin-top:12px;padding-inline:4px}
+.slide figcaption.ta{font:400 15px/1.6 var(--f-tamil)}
+.g-nav{display:flex;justify-content:center;align-items:center;gap:14px;margin-top:16px}
+.g-nav button{width:42px;height:42px;border-radius:50%;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;font:400 22px/1 var(--f-display)}
+.g-nav button:hover{background:var(--ink);color:var(--paper)}
+.dots{display:flex;gap:8px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--line);transition:.3s}
+.dots i.on{background:var(--wing);width:22px;border-radius:4px}
+
+/* ---------- guest note ---------- */
+.note-card{display:grid;gap:22px;align-items:center;max-width:820px;margin:0 auto;padding:clamp(26px,5vw,48px);
+  background:rgba(255,255,255,.7);border:1px solid var(--line);border-radius:28px}
+.note-card .mono-badge{width:92px;height:92px;border-radius:50%;display:grid;place-items:center;justify-self:center;
+  border:1px solid var(--gold);font:400 40px/1 var(--f-script);color:var(--wing)}
+.note-card h2{margin-bottom:12px}
+.note-card p{margin:0 0 12px;color:var(--ink-soft)}
+.note-card p.ta{font-family:var(--f-tamil)}
+.note-card .sign{font:400 30px/1 var(--f-script);color:var(--ink);margin:6px 0 0}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .seal,.seal::after{animation:none}
+  .gate .half{transition:opacity .4s ease}
+  .gate.open .half.l,.gate.open .half.r{transform:none;opacity:0}
+  .rise{transition:none}
+  .js .rise.pending{transform:none;opacity:1}
+}
+
+/* ---------- golden-hour sky: morning blue at the top, 5 PM sunset by the RSVP ---------- */
+#bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;--p:0}
+#bg i{position:absolute;inset:0;display:block}
+#bg .day{background:
+    radial-gradient(60vmax 40vmax at 110% -5%, rgba(175,201,241,.6), transparent 60%),
+    radial-gradient(50vmax 40vmax at -15% 35%, rgba(175,201,241,.4), transparent 60%),
+    linear-gradient(180deg,#E7EFFB 0%,#F5F8FC 70%)}
+#bg .dusk{opacity:var(--p);background:
+    radial-gradient(70vmax 45vmax at -10% 0%, rgba(214,196,236,.55), transparent 60%),
+    linear-gradient(180deg,#F1E6F1 0%,#FBEBDD 50%,#F8DDB8 100%)}
+#bg .sun{inset:auto;left:50%;width:120vmax;height:120vmax;margin-left:-60vmax;border-radius:50%;
+  top:calc(100% - 22vmax + var(--p) * 10vmax);opacity:calc(.25 + var(--p) * .75);
+  background:radial-gradient(closest-side, rgba(255,214,140,.85), rgba(246,180,120,.35) 45%, transparent 72%)}
+#bg .glints{opacity:calc((var(--p) - .65) * 2.8);
+  background-image:
+    radial-gradient(1.5px 1.5px at 12% 18%, var(--gold), transparent),
+    radial-gradient(1px 1px at 28% 42%, var(--gold), transparent),
+    radial-gradient(2px 2px at 71% 12%, var(--gold), transparent),
+    radial-gradient(1px 1px at 86% 36%, var(--gold), transparent),
+    radial-gradient(1.5px 1.5px at 44% 8%, var(--gold), transparent),
+    radial-gradient(1px 1px at 58% 30%, var(--gold), transparent),
+    radial-gradient(1.5px 1.5px at 6% 58%, var(--gold), transparent),
+    radial-gradient(1px 1px at 93% 64%, var(--gold), transparent);
+  animation:twinkle 4s ease-in-out infinite alternate}
+@keyframes twinkle{to{filter:brightness(1.6);transform:translateY(-6px)}}
+@media (prefers-reduced-motion: reduce){#bg .glints{animation:none}}
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="wingGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#AFC9F1"/><stop offset="1" stop-color="#2F62C8"/>
+    </linearGradient>
+    <symbol id="bf" viewBox="-20 -17 40 34" overflow="visible">
+      <g class="wl">
+        <path d="M0 0 C-5 -13 -19 -17 -18 -6 C-17 1 -8 2 0 0Z" fill="url(#wingGrad)" stroke="#14274A" stroke-width=".8"/>
+        <path d="M0 0 C-5 4 -15 11 -10 14 C-5 16 -2 8 0 0Z" fill="#2F62C8" stroke="#14274A" stroke-width=".8"/>
+      </g>
+      <g class="wr">
+        <path d="M0 0 C5 -13 19 -17 18 -6 C17 1 8 2 0 0Z" fill="url(#wingGrad)" stroke="#14274A" stroke-width=".8"/>
+        <path d="M0 0 C5 4 15 11 10 14 C5 16 2 8 0 0Z" fill="#2F62C8" stroke="#14274A" stroke-width=".8"/>
+      </g>
+      <ellipse cx="0" cy="1" rx="1.3" ry="8" fill="#14274A"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div id="bg" aria-hidden="true"><i class="day"></i><i class="dusk"></i><i class="sun"></i><i class="glints"></i></div>
+<canvas id="sky" aria-hidden="true"></canvas>
+
+<select class="lang" id="lang" aria-label="Choose language / மொழி">
+  <option value="en">English</option>
+  <option value="ta">தமிழ்</option>
+  <option value="kn">ಕನ್ನಡ</option>
+  <option value="ml">മലയാളം</option>
+  <option value="te">తెలుగు</option>
+  <option value="hi">हिन्दी</option>
+</select>
+
+<button class="music" id="music" type="button" aria-pressed="false" aria-label="Background music">
+  <span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  <span id="musicLabel">Music</span>
+</button>
+<div id="yt" aria-hidden="true"><div id="ytPlayer"></div></div>
+
+<!-- ============ GATE ============ -->
+<div class="gate" id="gate" role="dialog" aria-label="Wedding invitation cover">
+  <canvas id="motes" aria-hidden="true"></canvas>
+  <div class="half l">
+    <svg class="veins" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M100 50 C70 20 40 10 0 6 M100 50 C65 40 35 42 0 40 M100 50 C70 70 40 85 0 96" fill="none" stroke="#2F62C8" stroke-width=".25"/></svg>
+  </div>
+  <div class="half r">
+    <svg class="veins" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 50 C30 20 60 10 100 6 M0 50 C35 40 65 42 100 40 M0 50 C30 70 60 85 100 96" fill="none" stroke="#2F62C8" stroke-width=".25"/></svg>
+  </div>
+  <div class="gate-content">
+    <p class="gate-guest en" id="guestEn" hidden></p>
+    <p class="gate-guest ta" id="guestTa" hidden></p>
+    <p class="gate-kicker en">You are invited to the wedding of</p>
+    <p class="gate-kicker ta"><x-t data-k="gateKicker">திருமண அழைப்பிதழ்</x-t></p>
+    <h1 class="gate-names"><span class="ink">Prince<span class="amp">&amp;</span>Delsy</span></h1>
+    <div class="seal-wrap">
+      <svg class="seal-ring" viewBox="0 0 160 160" aria-hidden="true"><circle id="sealRing" cx="80" cy="80" r="74"/></svg>
+      <button class="seal" id="seal" type="button" aria-label="Open the invitation"><span>PD</span></button>
+    </div>
+    <p class="gate-hint en">Tap the seal to open</p>
+    <p class="gate-hint ta"><x-t data-k="gateHint">திறக்க முத்திரையைத் தொடவும்</x-t></p>
+    <p class="gate-date">20 · 11 · 2026</p>
+    <p class="gate-left" id="gateLeft" hidden><b id="gateDays"></b><span class="en">days to go</span><span class="ta"><x-t data-k="days">நாட்கள்</x-t></span></p>
+  </div>
+</div>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="verse en">
+          <svg width="14" height="22" viewBox="0 0 14 22" aria-hidden="true"><path d="M6 0h2v6h6v2H8v14H6V8H0V6h6z" fill="#B08436"/></svg>
+          This thing comes from the Lord. Genesis 24:50
+        </p>
+        <p class="verse ta">
+          <svg width="14" height="22" viewBox="0 0 14 22" aria-hidden="true"><path d="M6 0h2v6h6v2H8v14H6V8H0V6h6z" fill="#B08436"/></svg>
+          <x-t data-k="verse">இந்த காரியம் கர்த்தரால் வந்தது (ஆதியாகமம் 24:50)</x-t>
+        </p>
+        <h2 class="names" aria-label="Prince and Delsy">
+          <span class="n">Prince</span>
+          <span class="amp" aria-hidden="true">&amp;</span>
+          <span class="n n2">Delsy</span>
+        </h2>
+        <p class="full en">J. Prince Solomon weds S. Delsy Merlyn</p>
+        <p class="full ta" style="font-family:var(--f-tamil)"><x-t data-k="fullNames">ஜெ. பிரின்ஸ் சாலமன் ♡ ச. டெல்சி மெர்லின்</x-t></p>
+        <div class="dateline">
+          <span class="big">20.11.2026</span>
+          <span class="small en">Friday, 5:00 PM · Pallavaram, Chennai</span>
+          <span class="small ta"><x-t data-k="heroWhen">வெள்ளிக்கிழமை (கார்த்திகை 4) · மாலை 5 மணி · பல்லாவரம்</x-t></span>
+        </div>
+        <a class="scroll-cue en" href="#invitation"><i></i>Read the invitation</a>
+        <a class="scroll-cue ta" href="#invitation"><i></i><x-t data-k="scrollCue">அழைப்பிதழைப் படிக்க</x-t></a>
+      </div>
+      <figure class="hero-photo">
+        <img src="images/IMG_5498.jpg" alt="Prince and Delsy smiling together in front of the PD heart backdrop, Delsy in a purple and blue silk saree" width="570" height="740" style="aspect-ratio:570/740;object-fit:cover;object-position:44% 40%">
+        <span class="ring" aria-hidden="true"></span>
+      </figure>
+    </div>
+  </header>
+
+  <!-- ============ INVITATION ============ -->
+  <section class="invite" id="invitation">
+    <div class="wrap rise">
+      <p class="eyebrow en" style="justify-content:center">The invitation</p>
+      <p class="eyebrow ta" style="justify-content:center"><x-t data-k="invEyebrow">அழைப்பிதழ்</x-t></p>
+      <p class="lede en" style="font:italic 400 clamp(20px,3.6vw,26px)/1.5 var(--f-display);color:var(--ink)">We cordially solicit your prayers, blessings and gracious presence, along with your family and friends, on the auspicious occasion of the wedding of</p>
+      <p class="lede ta" style="font:400 17px/2 var(--f-tamil);color:var(--ink)"><x-t data-k="invOpen">அன்புடையீர் வணக்கம், இயேசு கிறிஸ்துவின் பெரிதான கிருபையால் நிகழும் ஆசீர்வாதமான 2026 ஆம் ஆண்டு நவம்பர் 20-ஆம் தேதி (கார்த்திகை 4) வெள்ளிக்கிழமை மாலை 5 மணி அளவில்</x-t></p>
+
+      <div class="couple-row">
+        <div class="person">
+          <h3 class="en">J. Prince Solomon<small>B.Tech (Civil)</small></h3>
+          <h3 class="ta"><x-t data-k="groomName">ஜெ. பிரின்ஸ் சாலமன்</x-t></h3>
+          <p class="work">K12 Techno Services Pvt. Ltd., Bengaluru</p>
+          <p class="parents en"><span>Son of</span>Mr. P. John Selvaraj &amp; Mrs. S. Amutha</p>
+          <p class="parents ta" style="font-family:var(--f-tamil);font-style:normal;font-size:16px"><span style="font-family:var(--f-tamil);letter-spacing:0;font-size:13px"><x-t data-k="sonOf">புதல்வன்</x-t></span><x-t data-k="groomParents">திரு. P. ஜான் செல்வராஜ் – திருமதி. S. அமுதா</x-t></p>
+        </div>
+        <div class="with en">with</div>
+        <div class="with ta"><x-t data-k="with">மற்றும்</x-t></div>
+        <div class="person">
+          <h3 class="en">S. Delsy Merlyn<small>B.Sc (Micro)</small></h3>
+          <h3 class="ta"><x-t data-k="brideName">ச. டெல்சி மெர்லின்</x-t></h3>
+          <p class="work">Accenture Pvt. Ltd., Chennai</p>
+          <p class="parents en"><span>Daughter of</span>Mr. R. Samuel Manoger &amp; Mrs. S. Juliet Axal</p>
+          <p class="parents ta" style="font-family:var(--f-tamil);font-style:normal;font-size:16px"><span style="font-family:var(--f-tamil);letter-spacing:0;font-size:13px"><x-t data-k="daughterOf">புதல்வி</x-t></span><x-t data-k="brideParents">திரு. R. சாமுவேல் மனோகர் – திருமதி. S. ஜூலியட் அக்சாள்</x-t></p>
+        </div>
+      </div>
+
+      <p class="tamil-letter ta"><x-t data-k="invClose">ஆகியோரது திருமணம் பெரியோர்களால் நிச்சயிக்கப்பட்டு எண்.11, பெரியார் நகர், நாகல்கேணி, <b>ECI தூய பவுல் ஆலயத்தில்</b> நடைபெறும் திருமண ஆராதனைக்கும் அதன்பின் பல்லாவரத்தில் அமைந்துள்ள <b>சிவந்தி ஆதித்தனார் கல்யாண மண்டபத்தில்</b> மாலை 7:00 மணிக்கு நடைபெறும் சகல வைபவங்களுக்கும் தாங்கள் தங்கள் குடும்ப சகிதமும் வருகை தந்து மணமக்களை வாழ்த்தி ஆசீர்வதிக்கும்படி அன்புடன் அழைக்கின்றோம்.</x-t></p>
+    </div>
+  </section>
+
+  <!-- ============ SCRATCH ============ -->
+  <section class="reveal-sec" id="save-date">
+    <div class="wrap">
+      <p class="eyebrow en" style="justify-content:center">Save the date</p>
+      <p class="eyebrow ta" style="justify-content:center"><x-t data-k="saveEyebrow">தேதியைக் குறித்துக் கொள்ளுங்கள்</x-t></p>
+      <h2 class="en">Scratch to find the day</h2>
+      <h2 class="ta"><x-t data-k="scratchTitle">தேதியை அறிய சுரண்டுங்கள்</x-t></h2>
+      <div class="scratch" id="scratch">
+        <div class="scratch-under">
+          <span class="day en">Friday</span><span class="day ta"><x-t data-k="friday">வெள்ளிக்கிழமை</x-t></span>
+          <span class="num">20</span>
+          <span class="month en">November 2026</span><span class="month ta"><x-t data-k="monthYear">நவம்பர் 2026 · கார்த்திகை 4</x-t></span>
+          <span class="hr en">Holy matrimony at 5:00 PM</span><span class="hr ta"><x-t data-k="scratchHr">திருமண ஆராதனை மாலை 5:00 மணி</x-t></span>
+        </div>
+        <canvas id="scratchCv" aria-label="Scratch card. Drag across it to reveal the wedding date." role="img"></canvas>
+      </div>
+      <p class="scratch-hint en" id="scratchHintEn">Drag your finger across the card</p>
+      <p class="scratch-hint ta" id="scratchHintTa"><x-t data-k="scratchHint">அட்டையின் மீது விரலால் தேய்க்கவும்</x-t></p>
+    </div>
+  </section>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section id="countdown">
+    <div class="wrap count-grid rise">
+      <div>
+        <p class="eyebrow en">Counting down</p>
+        <p class="eyebrow ta"><x-t data-k="countEyebrow">இன்னும்</x-t></p>
+        <h2 class="en">Until they say “I do”</h2>
+        <h2 class="ta"><x-t data-k="countTitle">திருமண ஆராதனைக்கு இன்னும்</x-t></h2>
+        <div class="clock" id="clock" aria-live="off">
+          <div class="unit"><b id="cd-d">23</b><span class="en">Days</span><span class="ta"><x-t data-k="days">நாட்கள்</x-t></span></div>
+          <div class="unit"><b id="cd-h">02</b><span class="en">Hours</span><span class="ta"><x-t data-k="hours">மணி</x-t></span></div>
+          <div class="unit"><b id="cd-m">14</b><span class="en">Minutes</span><span class="ta"><x-t data-k="minutes">நிமிடம்</x-t></span></div>
+          <div class="unit"><b id="cd-s">00</b><span class="en">Seconds</span><span class="ta"><x-t data-k="seconds">விநாடி</x-t></span></div>
+        </div>
+        <p class="count-done" id="cd-done" hidden><span class="en">Today they become one. Praise the Lord.</span><span class="ta"><x-t data-k="countDone">இன்று திருமண நாள். கர்த்தருக்கு ஸ்தோத்திரம்.</x-t></span></p>
+      </div>
+      <figure class="hands">
+        <img src="images/img1-hand-hold.jpeg" alt="Delsy's mehendi-patterned hand with a gold ring, resting in Prince's hand" width="545" height="280" loading="lazy" style="aspect-ratio:545/280;object-fit:cover;object-position:50% 56%">
+        <figcaption class="en">The most awaited moment, on this very special day</figcaption>
+        <figcaption class="ta" style="font-family:var(--f-tamil);font-style:normal;font-size:15px"><x-t data-k="handsCap">மிகவும் எதிர்பார்க்கப்பட்ட அந்த சிறப்பான நாள்</x-t></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ JOURNEY ============ -->
+  <section id="journey">
+    <div class="wrap rise">
+      <p class="eyebrow en">Two paths</p>
+      <p class="eyebrow ta"><x-t data-k="pathsEyebrow">இரு பாதைகள்</x-t></p>
+      <h2 class="en">From Tiruppur and Chennai to one altar</h2>
+      <h2 class="ta"><x-t data-k="pathsTitle">திருப்பூரும் சென்னையும் ஒரே பீடத்தில்</x-t></h2>
+      <p class="lede en">Scroll on and watch two butterflies find their way to Pallavaram.</p>
+      <p class="lede ta"><x-t data-k="pathsLede">கீழே உருட்டுங்கள், இரண்டு வண்ணத்துப்பூச்சிகள் பல்லாவரத்தில் சந்திப்பதைப் பாருங்கள்.</x-t></p>
+
+      <div class="journey-art" id="journeyArt">
+        <svg viewBox="0 0 400 330" role="img" aria-label="Two dotted paths, one from Tiruppur and one from Chennai, meet at Pallavaram on 20 November">
+          <path id="pathA" class="path" d="M50 52 C 40 170, 150 170, 200 282"/>
+          <path id="pathB" class="path" d="M350 52 C 372 160, 252 178, 200 282"/>
+          <text class="place" x="50" y="22" text-anchor="middle">Tiruppur</text>
+          <text class="who" x="50" y="42" text-anchor="middle">Prince</text>
+          <text class="place" x="350" y="22" text-anchor="middle">Chennai</text>
+          <text class="who" x="350" y="42" text-anchor="middle">Delsy</text>
+          <circle cx="200" cy="292" r="26" fill="#14274A"/>
+          <circle cx="200" cy="292" r="30" fill="none" stroke="#B08436" stroke-width="1"/>
+          <text class="meet" x="200" y="297" text-anchor="middle">20.11</text>
+          <use id="bfA" href="#bf" width="34" height="29" x="-17" y="-14.5"/>
+          <use id="bfB" href="#bf" width="34" height="29" x="-17" y="-14.5"/>
+        </svg>
+      </div>
+
+      <div class="journey-notes">
+        <div class="note">
+          <h3>Prince</h3>
+          <p class="en">From Tiruppur. Civil engineer, B.Tech. Works at K12 Techno Services in Bengaluru.</p>
+          <p class="ta"><x-t data-k="princeNote">திருப்பூரைச் சேர்ந்தவர். சிவில் பொறியாளர் (B.Tech). பெங்களூரு K12 டெக்னோ சர்வீசஸ் நிறுவனத்தில் பணி.</x-t></p>
+        </div>
+        <div class="note">
+          <h3>Delsy</h3>
+          <p class="en">From Chennai. Microbiology graduate, B.Sc. Works at Accenture in Chennai.</p>
+          <p class="ta"><x-t data-k="delsyNote">சென்னையைச் சேர்ந்தவர். நுண்ணுயிரியல் பட்டதாரி (B.Sc). சென்னை அக்சென்ச்சர் நிறுவனத்தில் பணி.</x-t></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS ============ -->
+  <section id="day">
+    <div class="wrap rise">
+      <p class="eyebrow en">The day</p>
+      <p class="eyebrow ta"><x-t data-k="dayEyebrow">நிகழ்ச்சிகள்</x-t></p>
+      <h2 class="en">Friday, 20 November 2026</h2>
+      <h2 class="ta"><x-t data-k="dayTitle">வெள்ளிக்கிழமை, நவம்பர் 20, 2026</x-t></h2>
+
+      <div class="tickets">
+        <article class="ticket notch">
+          <div class="time"><b>5:00</b><span class="en">PM</span><span class="ta"><x-t data-k="evening">மாலை</x-t></span></div>
+          <div class="body">
+            <p class="kind en">Holy Matrimony</p>
+            <p class="kind ta"><x-t data-k="kindWedding">திருமண ஆராதனை</x-t></p>
+            <h3 class="en">ECI St. Paul Church</h3>
+            <h3 class="ta"><x-t data-k="church">ECI தூய பவுல் ஆலயம்</x-t></h3>
+            <address class="en">No. 11, Periyar Nagar, Nagalkeni, Pallavaram, Chennai 600044</address>
+            <address class="ta"><x-t data-k="churchAddr">எண்.11, பெரியார் நகர், நாகல்கேணி, பல்லாவரம், சென்னை 600044</x-t></address>
+            <div class="actions">
+              <a class="btn" href="https://maps.app.goo.gl/E1ExuKzxF5a79MKT9" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>
+                <span class="en">Directions</span><span class="ta"><x-t data-k="directions">வழி</x-t></span></a>
+              <a class="btn ghost" id="calChurch" href="#" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 9h14v11H5z" fill="currentColor"/></svg>
+                <span class="en">Add to calendar</span><span class="ta"><x-t data-k="addCal">நாட்காட்டியில் சேர்</x-t></span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="ticket notch">
+          <div class="time"><b>7:00</b><span class="en">PM</span><span class="ta"><x-t data-k="evening">மாலை</x-t></span></div>
+          <div class="body">
+            <p class="kind en">Reception</p>
+            <p class="kind ta"><x-t data-k="kindReception">வரவேற்பு</x-t></p>
+            <h3 class="en">Sivandhi Adhithanar Kalyana Mandapam</h3>
+            <h3 class="ta"><x-t data-k="hall">சிவந்தி ஆதித்தனார் கல்யாண மண்டபம்</x-t></h3>
+            <address class="en">Pallavaram, Chennai. From 7:00 PM onwards</address>
+            <address class="ta"><x-t data-k="hallAddr">பல்லாவரம், சென்னை. மாலை 7:00 மணி முதல்</x-t></address>
+            <div class="actions">
+              <a class="btn" href="https://maps.app.goo.gl/BoqHxkh6De4iS7Qy6" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"/></svg>
+                <span class="en">Directions</span><span class="ta"><x-t data-k="directions">வழி</x-t></span></a>
+              <a class="btn ghost" id="calReception" href="#" target="_blank" rel="noopener">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2zM5 9h14v11H5z" fill="currentColor"/></svg>
+                <span class="en">Add to calendar</span><span class="ta"><x-t data-k="addCal">நாட்காட்டியில் சேர்</x-t></span></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section id="gallery">
+    <div class="wrap rise">
+      <p class="eyebrow en">Moments</p>
+      <p class="eyebrow ta"><x-t data-k="galEyebrow">தருணங்கள்</x-t></p>
+      <h2 class="en">Celebrating love and happiness</h2>
+      <h2 class="ta"><x-t data-k="galTitle">அன்பையும் மகிழ்ச்சியையும் கொண்டாடுவோம்</x-t></h2>
+      <div class="gallery">
+        <div class="track" id="track" tabindex="0" aria-label="Photo gallery">
+          <figure class="slide"><div class="ph"><img src="images/IMG_5500.jpg" alt="Prince and Delsy looking at each other in front of the PD heart backdrop" style="object-position:40% 50%"></div>
+            <figcaption class="en">Two hearts, one blessed beginning</figcaption><figcaption class="ta"><x-t data-k="cap1">இரு இதயங்கள், ஒரு ஆசீர்வாதமான தொடக்கம்</x-t></figcaption></figure>
+          <figure class="slide"><div class="ph"><img src="images/IMG_5499.jpg" alt="Prince and Delsy embracing outdoors, smiling back over their shoulders" style="object-position:56% 50%"></div>
+            <figcaption class="en">Side by side, smiling at what lies ahead</figcaption><figcaption class="ta"><x-t data-k="cap2">இணைந்து, எதிர்காலத்தை நோக்கிப் புன்னகையுடன்</x-t></figcaption></figure>
+          <figure class="slide"><div class="ph"><img src="images/img1-hand-hold.jpeg" alt="Delsy's mehendi hand resting in Prince's hand" style="object-position:30% 58%"></div>
+            <figcaption class="en">Hand in hand, for every season</figcaption><figcaption class="ta"><x-t data-k="cap3">எல்லாக் காலங்களிலும் கைகோர்த்து</x-t></figcaption></figure>
+        </div>
+        <div class="g-nav">
+          <button type="button" id="gPrev" aria-label="Previous photo">‹</button>
+          <div class="dots" id="dots"><i class="on"></i><i></i><i></i></div>
+          <button type="button" id="gNext" aria-label="Next photo">›</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GUEST NOTE ============ -->
+  <section>
+    <div class="wrap rise">
+      <div class="note-card">
+        <div class="mono-badge" aria-hidden="true">PD</div>
+        <div>
+          <h2 class="en" id="dearEn">Dear guest</h2>
+          <h2 class="ta" id="dearTa"><x-t data-k="dearGuest">அன்புள்ள விருந்தினரே</x-t></h2>
+          <p class="en">Your prayers and presence mean the world to us. Please come with your family and friends and stand with us as we begin our life together before God.</p>
+          <p class="ta"><x-t data-k="letterBody">உங்கள் ஜெபமும் வருகையும் எங்களுக்கு மிகவும் விலைமதிப்பற்றவை. தேவனுடைய சமுகத்தில் நாங்கள் புதிய வாழ்க்கையைத் தொடங்கும் இந்நாளில் உங்கள் குடும்பத்தோடு வந்து எங்களை ஆசீர்வதியுங்கள்.</x-t></p>
+          <p class="sign">Prince &amp; Delsy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WISHES ============ -->
+  <section class="wishes" id="wishes">
+    <div class="wrap rise">
+      <p class="eyebrow en" style="justify-content:center">Your blessings</p>
+      <p class="eyebrow ta" style="justify-content:center"><x-t data-k="wishEyebrow">உங்கள் ஆசீர்வாதம்</x-t></p>
+      <h2 class="en">Bless the couple</h2>
+      <h2 class="ta"><x-t data-k="wishTitle">மணமக்களை வாழ்த்துங்கள்</x-t></h2>
+      <p class="lede en">Can't make it in person? Send your prayers and wishes to the family on WhatsApp. Tap anywhere on this page to set a butterfly free for them.</p>
+      <p class="lede ta"><x-t data-k="wishLede">நேரில் வர இயலவில்லையா? உங்கள் வாழ்த்துக்களை WhatsApp மூலம் குடும்பத்தினருக்கு அனுப்புங்கள். இந்தப் பக்கத்தில் எங்கும் தொட்டு ஒரு வண்ணத்துப்பூச்சியைப் பறக்க விடுங்கள்.</x-t></p>
+      <div class="actions">
+        <a class="btn" id="wa" href="#" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 13.9c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z" fill="currentColor"/></svg>
+          <span class="en">Send wishes on WhatsApp</span><span class="ta"><x-t data-k="waBtn">WhatsApp-ல் வாழ்த்துங்கள்</x-t></span></a>
+      </div>
+      <div class="contacts">
+        <span class="chip"><span class="who">Prince</span>77089 27031 <button type="button" data-copy="7708927031">Copy</button></span>
+        <span class="chip"><span class="who">Delsy</span>97898 05149 <button type="button" data-copy="9789805149">Copy</button></span>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div class="mono">PD</div>
+      <p class="en">With love and prayers from Mr. P. John Selvaraj &amp; Mrs. S. Amutha and Mr. R. Samuel Manoger &amp; Mrs. S. Juliet Axal, with family and friends.</p>
+      <p class="ta"><x-t data-k="footer">அன்புடன், திரு. P. ஜான் செல்வராஜ் – திருமதி. S. அமுதா மற்றும் திரு. R. சாமுவேல் மனோகர் – திருமதி. S. ஜூலியட் அக்சாள் குடும்பத்தினர்.</x-t></p>
+      <div class="actions" style="justify-content:center;margin:28px 0 0">
+        <button class="btn ghost" id="share" type="button">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="en">Share this invitation</span><span class="ta"><x-t data-k="share">அழைப்பிதழைப் பகிரவும்</x-t></span></button>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  root.classList.add('js');
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- golden-hour sky follows scroll ---------- */
+  (function(){
+    var bg=document.getElementById('bg'), queued=false;
+    function paint(){
+      queued=false;
+      var max=document.documentElement.scrollHeight-innerHeight;
+      bg.style.setProperty('--p', max>0 ? Math.min(1,Math.max(0,scrollY/max)).toFixed(3) : 0);
+    }
+    function queue(){ if(!queued){ queued=true; requestAnimationFrame(paint); } }
+    addEventListener('scroll',queue,{passive:true});
+    addEventListener('resize',queue);
+    paint();
+  })();
+
+  /* ---------- language ---------- */
+  // Tamil text lives in the page; the other languages swap into the same <x-t data-k> slots.
+  var I18N={
+"kn": {
+"gateKicker": "ವಿವಾಹ ಆಮಂತ್ರಣ",
+"gateHint": "ತೆರೆಯಲು ಮುದ್ರೆಯನ್ನು ಸ್ಪರ್ಶಿಸಿ",
+"verse": "ಈ ಕಾರ್ಯವು ಕರ್ತನಿಂದಲೇ ಬಂದಿದೆ (ಆದಿಕಾಂಡ 24:50)",
+"fullNames": "ಜೆ. ಪ್ರಿನ್ಸ್ ಸೊಲೊಮನ್ ♡ ಎಸ್. ಡೆಲ್ಸಿ ಮೆರ್ಲಿನ್",
+"heroWhen": "ಶುಕ್ರವಾರ · ಸಂಜೆ 5 ಗಂಟೆ · ಪಲ್ಲಾವರಂ",
+"scrollCue": "ಆಮಂತ್ರಣವನ್ನು ಓದಿ",
+"invEyebrow": "ಆಮಂತ್ರಣ",
+"invOpen": "ಆತ್ಮೀಯರೇ, ವಂದನೆಗಳು. ಯೇಸು ಕ್ರಿಸ್ತನ ಮಹಾ ಕೃಪೆಯಿಂದ 2026ನೇ ಇಸವಿ ನವೆಂಬರ್ 20ನೇ ತಾರೀಖು ಶುಕ್ರವಾರ ಸಂಜೆ 5 ಗಂಟೆಗೆ",
+"groomName": "ಜೆ. ಪ್ರಿನ್ಸ್ ಸೊಲೊಮನ್",
+"sonOf": "ಪುತ್ರ",
+"groomParents": "ಶ್ರೀ P. ಜಾನ್ ಸೆಲ್ವರಾಜ್ – ಶ್ರೀಮತಿ S. ಅಮುತಾ",
+"with": "ಮತ್ತು",
+"brideName": "ಎಸ್. ಡೆಲ್ಸಿ ಮೆರ್ಲಿನ್",
+"daughterOf": "ಪುತ್ರಿ",
+"brideParents": "ಶ್ರೀ R. ಸ್ಯಾಮುಯೆಲ್ ಮನೋಗರ್ – ಶ್ರೀಮತಿ S. ಜೂಲಿಯೆಟ್ ಅಕ್ಸಲ್",
+"invClose": "ಇವರ, ಹಿರಿಯರಿಂದ ನಿಶ್ಚಯಿಸಲ್ಪಟ್ಟ ವಿವಾಹವು ನಂ. 11, ಪೆರಿಯಾರ್ ನಗರ, ನಾಗಲ್‌ಕೇಣಿಯಲ್ಲಿರುವ <b>ECI ಸೇಂಟ್ ಪಾಲ್ ಚರ್ಚ್‌ನಲ್ಲಿ</b> ನಡೆಯಲಿದೆ. ಈ ವಿವಾಹ ಆರಾಧನೆಗೂ, ತದನಂತರ ಪಲ್ಲಾವರಂನಲ್ಲಿರುವ <b>ಸಿವಂತಿ ಆದಿತ್ತನಾರ್ ಕಲ್ಯಾಣ ಮಂಟಪದಲ್ಲಿ</b> ಸಂಜೆ 7:00 ಗಂಟೆಗೆ ನಡೆಯುವ ಎಲ್ಲಾ ಸಮಾರಂಭಗಳಿಗೂ ತಾವು ಕುಟುಂಬ ಸಮೇತರಾಗಿ ಆಗಮಿಸಿ ವಧೂವರರನ್ನು ಆಶೀರ್ವದಿಸಬೇಕೆಂದು ಪ್ರೀತಿಯಿಂದ ಆಹ್ವಾನಿಸುತ್ತೇವೆ.",
+"saveEyebrow": "ದಿನಾಂಕವನ್ನು ಗುರುತಿಸಿಕೊಳ್ಳಿ",
+"scratchTitle": "ದಿನಾಂಕ ತಿಳಿಯಲು ಉಜ್ಜಿ",
+"friday": "ಶುಕ್ರವಾರ",
+"monthYear": "ನವೆಂಬರ್ 2026",
+"scratchHr": "ವಿವಾಹ ಆರಾಧನೆ ಸಂಜೆ 5:00 ಗಂಟೆಗೆ",
+"scratchHint": "ಕಾರ್ಡ್ ಮೇಲೆ ಬೆರಳಿನಿಂದ ಉಜ್ಜಿ",
+"scratchDone": "ಅಲ್ಲಿ ಭೇಟಿಯಾಗೋಣ!",
+"countEyebrow": "ಕ್ಷಣಗಣನೆ",
+"countTitle": "ವಿವಾಹ ಆರಾಧನೆಗೆ ಇನ್ನು",
+"days": "ದಿನಗಳು",
+"hours": "ಗಂಟೆ",
+"minutes": "ನಿಮಿಷ",
+"seconds": "ಸೆಕೆಂಡು",
+"countDone": "ಇಂದು ವಿವಾಹ ದಿನ. ಕರ್ತನಿಗೆ ಸ್ತೋತ್ರ.",
+"handsCap": "ಬಹು ನಿರೀಕ್ಷಿತ ಆ ವಿಶೇಷ ದಿನ",
+"pathsEyebrow": "ಎರಡು ದಾರಿಗಳು",
+"pathsTitle": "ತಿರುಪ್ಪೂರ್ ಮತ್ತು ಚೆನ್ನೈ, ಒಂದೇ ಬಲಿಪೀಠದ ಬಳಿ",
+"pathsLede": "ಕೆಳಗೆ ಸ್ಕ್ರೋಲ್ ಮಾಡಿ, ಎರಡು ಚಿಟ್ಟೆಗಳು ಪಲ್ಲಾವರಂನಲ್ಲಿ ಸಂಧಿಸುವುದನ್ನು ನೋಡಿ.",
+"princeNote": "ತಿರುಪ್ಪೂರಿನವರು. ಸಿವಿಲ್ ಎಂಜಿನಿಯರ್ (B.Tech). ಬೆಂಗಳೂರಿನ K12 ಟೆಕ್ನೋ ಸರ್ವೀಸಸ್ ಸಂಸ್ಥೆಯಲ್ಲಿ ಉದ್ಯೋಗ.",
+"delsyNote": "ಚೆನ್ನೈನವರು. ಸೂಕ್ಷ್ಮಜೀವಶಾಸ್ತ್ರ ಪದವೀಧರೆ (B.Sc). ಚೆನ್ನೈನ ಅಕ್ಸೆಂಚರ್ ಸಂಸ್ಥೆಯಲ್ಲಿ ಉದ್ಯೋಗ.",
+"dayEyebrow": "ಕಾರ್ಯಕ್ರಮಗಳು",
+"dayTitle": "ಶುಕ್ರವಾರ, ನವೆಂಬರ್ 20, 2026",
+"evening": "ಸಂಜೆ",
+"kindWedding": "ವಿವಾಹ ಆರಾಧನೆ",
+"church": "ECI ಸೇಂಟ್ ಪಾಲ್ ಚರ್ಚ್",
+"churchAddr": "ನಂ. 11, ಪೆರಿಯಾರ್ ನಗರ, ನಾಗಲ್‌ಕೇಣಿ, ಪಲ್ಲಾವರಂ, ಚೆನ್ನೈ 600044",
+"directions": "ದಾರಿ",
+"addCal": "ಕ್ಯಾಲೆಂಡರ್‌ಗೆ ಸೇರಿಸಿ",
+"kindReception": "ಆರತಕ್ಷತೆ",
+"hall": "ಸಿವಂತಿ ಆದಿತ್ತನಾರ್ ಕಲ್ಯಾಣ ಮಂಟಪ",
+"hallAddr": "ಪಲ್ಲಾವರಂ, ಚೆನ್ನೈ. ಸಂಜೆ 7:00 ಗಂಟೆಯಿಂದ",
+"galEyebrow": "ಕ್ಷಣಗಳು",
+"galTitle": "ಪ್ರೀತಿ ಮತ್ತು ಸಂತೋಷದ ಸಂಭ್ರಮ",
+"cap1": "ಎರಡು ಹೃದಯಗಳು, ಒಂದು ಆಶೀರ್ವಾದಭರಿತ ಆರಂಭ",
+"cap2": "ಜೊತೆಯಾಗಿ, ಭವಿಷ್ಯದತ್ತ ನಗುಮುಖದಿಂದ",
+"cap3": "ಎಲ್ಲ ಕಾಲಗಳಲ್ಲೂ ಕೈಹಿಡಿದು",
+"dearGuest": "ಆತ್ಮೀಯ ಅತಿಥಿಗಳೇ",
+"letterBody": "ನಿಮ್ಮ ಪ್ರಾರ್ಥನೆ ಮತ್ತು ಆಗಮನ ನಮಗೆ ಅತ್ಯಮೂಲ್ಯ. ದೇವರ ಸನ್ನಿಧಿಯಲ್ಲಿ ನಾವು ಹೊಸ ಜೀವನವನ್ನು ಆರಂಭಿಸುವ ಈ ದಿನದಂದು ನಿಮ್ಮ ಕುಟುಂಬದೊಂದಿಗೆ ಬಂದು ನಮ್ಮನ್ನು ಆಶೀರ್ವದಿಸಿ.",
+"wishEyebrow": "ನಿಮ್ಮ ಆಶೀರ್ವಾದ",
+"wishTitle": "ವಧೂವರರನ್ನು ಹರಸಿ",
+"wishLede": "ಖುದ್ದಾಗಿ ಬರಲು ಸಾಧ್ಯವಿಲ್ಲವೇ? ನಿಮ್ಮ ಶುಭಾಶಯಗಳನ್ನು WhatsApp ಮೂಲಕ ಕುಟುಂಬಕ್ಕೆ ಕಳುಹಿಸಿ. ಈ ಪುಟದಲ್ಲಿ ಎಲ್ಲಿಯಾದರೂ ಸ್ಪರ್ಶಿಸಿ ಒಂದು ಚಿಟ್ಟೆಯನ್ನು ಹಾರಿಸಿ.",
+"waBtn": "WhatsApp ಮೂಲಕ ಶುಭ ಹಾರೈಸಿ",
+"footer": "ಪ್ರೀತಿಯಿಂದ, ಶ್ರೀ P. ಜಾನ್ ಸೆಲ್ವರಾಜ್ – ಶ್ರೀಮತಿ S. ಅಮುತಾ ಮತ್ತು ಶ್ರೀ R. ಸ್ಯಾಮುಯೆಲ್ ಮನೋಗರ್ – ಶ್ರೀಮತಿ S. ಜೂಲಿಯೆಟ್ ಅಕ್ಸಲ್ ಕುಟುಂಬದವರು.",
+"share": "ಆಮಂತ್ರಣವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ",
+"dearP": "ಆತ್ಮೀಯ",
+"numCopied": "ಸಂಖ್ಯೆ ನಕಲಿಸಲಾಗಿದೆ",
+"numSelected": "ಸಂಖ್ಯೆ ಆಯ್ಕೆಯಾಗಿದೆ",
+"linkCopied": "ಲಿಂಕ್ ನಕಲಿಸಲಾಗಿದೆ",
+"musicOn": "ಸಂಗೀತ",
+"musicOff": "ಸಂಗೀತ",
+"scratchCanvas": "ಉಜ್ಜಿ ದಿನಾಂಕ ನೋಡಿ"
+},
+"ml": {
+"gateKicker": "വിവാഹ ക്ഷണം",
+"gateHint": "തുറക്കാൻ മുദ്രയിൽ തൊടുക",
+"verse": "ഈ കാര്യം കർത്താവിൽനിന്നു വന്നിരിക്കുന്നു (ഉല്പത്തി 24:50)",
+"fullNames": "ജെ. പ്രിൻസ് സോളമൻ ♡ എസ്. ഡെൽസി മെർലിൻ",
+"heroWhen": "വെള്ളിയാഴ്ച · വൈകുന്നേരം 5 മണി · പല്ലാവരം",
+"scrollCue": "ക്ഷണക്കത്ത് വായിക്കുക",
+"invEyebrow": "ക്ഷണക്കത്ത്",
+"invOpen": "പ്രിയരേ, വന്ദനം. യേശുക്രിസ്തുവിന്റെ മഹാകൃപയാൽ 2026 നവംബർ 20 വെള്ളിയാഴ്ച വൈകുന്നേരം 5 മണിക്ക്",
+"groomName": "ജെ. പ്രിൻസ് സോളമൻ",
+"sonOf": "മകൻ",
+"groomParents": "ശ്രീ. P. ജോൺ സെൽവരാജ് – ശ്രീമതി S. അമുത",
+"with": "ഒപ്പം",
+"brideName": "എസ്. ഡെൽസി മെർലിൻ",
+"daughterOf": "മകൾ",
+"brideParents": "ശ്രീ. R. സാമുവൽ മനോഗർ – ശ്രീമതി S. ജൂലിയറ്റ് അക്സൽ",
+"invClose": "എന്നിവർ തമ്മിലുള്ള, മുതിർന്നവരാൽ നിശ്ചയിക്കപ്പെട്ട വിവാഹം നം. 11, പെരിയാർ നഗർ, നാഗൽകേണിയിലുള്ള <b>ECI സെന്റ് പോൾ ചർച്ചിൽ</b> നടക്കുന്നു. ഈ വിവാഹ ശുശ്രൂഷയിലും, തുടർന്ന് പല്ലാവരത്തുള്ള <b>സിവന്തി ആദിത്തനാർ കല്യാണ മണ്ഡപത്തിൽ</b> വൈകുന്നേരം 7:00 മണിക്ക് നടക്കുന്ന എല്ലാ ചടങ്ങുകളിലും താങ്കൾ കുടുംബസമേതം വന്നുചേർന്ന് വധൂവരന്മാരെ അനുഗ്രഹിക്കണമെന്ന് സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു.",
+"saveEyebrow": "തീയതി ഓർത്തുവയ്ക്കുക",
+"scratchTitle": "തീയതി അറിയാൻ ഉരയ്ക്കുക",
+"friday": "വെള്ളിയാഴ്ച",
+"monthYear": "നവംബർ 2026",
+"scratchHr": "വിവാഹ ശുശ്രൂഷ വൈകുന്നേരം 5:00 മണിക്ക്",
+"scratchHint": "കാർഡിൽ വിരൽ കൊണ്ട് ഉരയ്ക്കുക",
+"scratchDone": "അവിടെ കാണാം!",
+"countEyebrow": "കാത്തിരിപ്പ്",
+"countTitle": "വിവാഹ ശുശ്രൂഷയ്ക്ക് ഇനി",
+"days": "ദിവസം",
+"hours": "മണിക്കൂർ",
+"minutes": "മിനിറ്റ്",
+"seconds": "സെക്കൻഡ്",
+"countDone": "ഇന്ന് വിവാഹ ദിനം. കർത്താവിന് സ്തോത്രം.",
+"handsCap": "ഏറെ കാത്തിരുന്ന ആ സുദിനം",
+"pathsEyebrow": "രണ്ട് വഴികൾ",
+"pathsTitle": "തിരുപ്പൂരും ചെന്നൈയും ഒരേ അൾത്താരയിൽ",
+"pathsLede": "താഴേക്ക് സ്ക്രോൾ ചെയ്യൂ, രണ്ട് ചിത്രശലഭങ്ങൾ പല്ലാവരത്ത് കണ്ടുമുട്ടുന്നത് കാണൂ.",
+"princeNote": "തിരുപ്പൂർ സ്വദേശി. സിവിൽ എഞ്ചിനീയർ (B.Tech). ബെംഗളൂരുവിലെ K12 ടെക്നോ സർവീസസിൽ ജോലി ചെയ്യുന്നു.",
+"delsyNote": "ചെന്നൈ സ്വദേശിനി. മൈക്രോബയോളജി ബിരുദധാരി (B.Sc). ചെന്നൈയിലെ അക്സെഞ്ചറിൽ ജോലി ചെയ്യുന്നു.",
+"dayEyebrow": "ചടങ്ങുകൾ",
+"dayTitle": "വെള്ളിയാഴ്ച, നവംബർ 20, 2026",
+"evening": "വൈകിട്ട്",
+"kindWedding": "വിവാഹ ശുശ്രൂഷ",
+"church": "ECI സെന്റ് പോൾ ചർച്ച്",
+"churchAddr": "നം. 11, പെരിയാർ നഗർ, നാഗൽകേണി, പല്ലാവരം, ചെന്നൈ 600044",
+"directions": "വഴി",
+"addCal": "കലണ്ടറിൽ ചേർക്കുക",
+"kindReception": "വിവാഹ സൽക്കാരം",
+"hall": "സിവന്തി ആദിത്തനാർ കല്യാണ മണ്ഡപം",
+"hallAddr": "പല്ലാവരം, ചെന്നൈ. വൈകുന്നേരം 7:00 മുതൽ",
+"galEyebrow": "നിമിഷങ്ങൾ",
+"galTitle": "സ്നേഹത്തിന്റെയും സന്തോഷത്തിന്റെയും ആഘോഷം",
+"cap1": "രണ്ട് ഹൃദയങ്ങൾ, ഒരു അനുഗ്രഹീത തുടക്കം",
+"cap2": "ഒരുമിച്ച്, ഭാവിയിലേക്ക് പുഞ്ചിരിയോടെ",
+"cap3": "എല്ലാ കാലങ്ങളിലും കൈകോർത്ത്",
+"dearGuest": "പ്രിയ അതിഥികളേ",
+"letterBody": "നിങ്ങളുടെ പ്രാർത്ഥനയും സാന്നിധ്യവും ഞങ്ങൾക്ക് ഏറെ വിലപ്പെട്ടതാണ്. ദൈവസന്നിധിയിൽ ഞങ്ങൾ പുതിയ ജീവിതം ആരംഭിക്കുന്ന ഈ ദിനത്തിൽ കുടുംബസമേതം വന്ന് ഞങ്ങളെ അനുഗ്രഹിക്കണമേ.",
+"wishEyebrow": "നിങ്ങളുടെ അനുഗ്രഹം",
+"wishTitle": "വധൂവരന്മാരെ അനുഗ്രഹിക്കൂ",
+"wishLede": "നേരിട്ട് വരാൻ കഴിയില്ലേ? നിങ്ങളുടെ ആശംസകൾ WhatsApp വഴി കുടുംബത്തിന് അയയ്ക്കൂ. ഈ പേജിൽ എവിടെയെങ്കിലും തൊട്ട് ഒരു ചിത്രശലഭത്തെ പറത്തിവിടൂ.",
+"waBtn": "WhatsApp-ൽ ആശംസകൾ അയയ്ക്കൂ",
+"footer": "സ്നേഹപൂർവ്വം, ശ്രീ. P. ജോൺ സെൽവരാജ് – ശ്രീമതി S. അമുത, ശ്രീ. R. സാമുവൽ മനോഗർ – ശ്രീമതി S. ജൂലിയറ്റ് അക്സൽ എന്നിവരുടെ കുടുംബാംഗങ്ങൾ.",
+"share": "ക്ഷണം പങ്കിടുക",
+"dearP": "പ്രിയ",
+"numCopied": "നമ്പർ പകർത്തി",
+"numSelected": "നമ്പർ തിരഞ്ഞെടുത്തു",
+"linkCopied": "ലിങ്ക് പകർത്തി",
+"musicOn": "സംഗീതം",
+"musicOff": "സംഗീതം",
+"scratchCanvas": "ഉരച്ച് തീയതി കാണൂ"
+},
+"te": {
+"gateKicker": "వివాహ ఆహ్వానం",
+"gateHint": "తెరవడానికి ముద్రను తాకండి",
+"verse": "ఈ కార్యము ప్రభువు వలననే కలిగినది (ఆదికాండము 24:50)",
+"fullNames": "జె. ప్రిన్స్ సోలమన్ ♡ ఎస్. డెల్సీ మెర్లిన్",
+"heroWhen": "శుక్రవారం · సాయంత్రం 5 గంటలకు · పల్లావరం",
+"scrollCue": "ఆహ్వాన పత్రికను చదవండి",
+"invEyebrow": "ఆహ్వాన పత్రిక",
+"invOpen": "ప్రియమైన వారికి వందనములు. యేసుక్రీస్తు మహా కృపవలన 2026వ సంవత్సరం నవంబర్ 20వ తేదీ శుక్రవారం సాయంత్రం 5 గంటలకు",
+"groomName": "జె. ప్రిన్స్ సోలమన్",
+"sonOf": "కుమారుడు",
+"groomParents": "శ్రీ P. జాన్ సెల్వరాజ్ – శ్రీమతి S. అముత",
+"with": "మరియు",
+"brideName": "ఎస్. డెల్సీ మెర్లిన్",
+"daughterOf": "కుమార్తె",
+"brideParents": "శ్రీ R. శామ్యూల్ మనోగర్ – శ్రీమతి S. జూలియట్ అక్సల్",
+"invClose": "వీరి వివాహము పెద్దలచే నిశ్చయించబడి, నం. 11, పెరియార్ నగర్, నాగల్‌కేణిలోని <b>ECI సెయింట్ పాల్ చర్చిలో</b> జరుగును. ఈ వివాహ ఆరాధనకు మరియు తదుపరి పల్లావరంలోని <b>సివంతి ఆదిత్తనార్ కళ్యాణ మండపంలో</b> సాయంత్రం 7:00 గంటలకు జరుగు అన్ని వేడుకలకు మీరు సకుటుంబ సమేతంగా విచ్చేసి వధూవరులను ఆశీర్వదించవలసినదిగా ప్రేమతో ఆహ్వానిస్తున్నాము.",
+"saveEyebrow": "తేదీని గుర్తుంచుకోండి",
+"scratchTitle": "తేదీ తెలుసుకోవడానికి రుద్దండి",
+"friday": "శుక్రవారం",
+"monthYear": "నవంబర్ 2026",
+"scratchHr": "వివాహ ఆరాధన సాయంత్రం 5:00 గంటలకు",
+"scratchHint": "కార్డుపై వేలితో రుద్దండి",
+"scratchDone": "అక్కడ కలుద్దాం!",
+"countEyebrow": "నిరీక్షణ",
+"countTitle": "వివాహ ఆరాధనకు ఇంకా",
+"days": "రోజులు",
+"hours": "గంటలు",
+"minutes": "నిమిషాలు",
+"seconds": "సెకన్లు",
+"countDone": "నేడు వివాహ దినం. ప్రభువుకు స్తోత్రం.",
+"handsCap": "ఎంతగానో ఎదురుచూసిన ఆ ప్రత్యేక దినం",
+"pathsEyebrow": "రెండు దారులు",
+"pathsTitle": "తిరుప్పూర్ మరియు చెన్నై, ఒకే బలిపీఠం వద్ద",
+"pathsLede": "కిందికి స్క్రోల్ చేయండి, రెండు సీతాకోకచిలుకలు పల్లావరంలో కలుసుకోవడం చూడండి.",
+"princeNote": "తిరుప్పూర్‌కు చెందినవారు. సివిల్ ఇంజనీర్ (B.Tech). బెంగళూరులోని K12 టెక్నో సర్వీసెస్ సంస్థలో ఉద్యోగం.",
+"delsyNote": "చెన్నైకి చెందినవారు. మైక్రోబయాలజీ పట్టభద్రురాలు (B.Sc). చెన్నైలోని యాక్సెంచర్ సంస్థలో ఉద్యోగం.",
+"dayEyebrow": "కార్యక్రమాలు",
+"dayTitle": "శుక్రవారం, నవంబర్ 20, 2026",
+"evening": "సాయంత్రం",
+"kindWedding": "వివాహ ఆరాధన",
+"church": "ECI సెయింట్ పాల్ చర్చి",
+"churchAddr": "నం. 11, పెరియార్ నగర్, నాగల్‌కేణి, పల్లావరం, చెన్నై 600044",
+"directions": "దారి",
+"addCal": "క్యాలెండర్‌లో చేర్చండి",
+"kindReception": "రిసెప్షన్",
+"hall": "సివంతి ఆదిత్తనార్ కళ్యాణ మండపం",
+"hallAddr": "పల్లావరం, చెన్నై. సాయంత్రం 7:00 గంటల నుండి",
+"galEyebrow": "క్షణాలు",
+"galTitle": "ప్రేమ, ఆనందాల వేడుక",
+"cap1": "రెండు హృదయాలు, ఒక దీవెనకరమైన ఆరంభం",
+"cap2": "కలిసి, భవిష్యత్తు వైపు చిరునవ్వుతో",
+"cap3": "అన్ని కాలాల్లోనూ చేయి చేయి కలిపి",
+"dearGuest": "ప్రియమైన అతిథులారా",
+"letterBody": "మీ ప్రార్థనలు మరియు మీ రాక మాకు ఎంతో విలువైనవి. దేవుని సన్నిధిలో మేము నూతన జీవితాన్ని ప్రారంభించే ఈ రోజున మీ కుటుంబంతో వచ్చి మమ్మల్ని ఆశీర్వదించండి.",
+"wishEyebrow": "మీ ఆశీర్వాదం",
+"wishTitle": "వధూవరులను ఆశీర్వదించండి",
+"wishLede": "స్వయంగా రాలేకపోతున్నారా? మీ శుభాకాంక్షలను WhatsApp ద్వారా కుటుంబానికి పంపండి. ఈ పేజీలో ఎక్కడైనా తాకి ఒక సీతాకోకచిలుకను ఎగరవేయండి.",
+"waBtn": "WhatsApp లో శుభాకాంక్షలు పంపండి",
+"footer": "ప్రేమతో, శ్రీ P. జాన్ సెల్వరాజ్ – శ్రీమతి S. అముత మరియు శ్రీ R. శామ్యూల్ మనోగర్ – శ్రీమతి S. జూలియట్ అక్సల్ కుటుంబ సభ్యులు.",
+"share": "ఆహ్వానాన్ని షేర్ చేయండి",
+"dearP": "ప్రియమైన",
+"numCopied": "నంబర్ కాపీ అయింది",
+"numSelected": "నంబర్ ఎంచుకోబడింది",
+"linkCopied": "లింక్ కాపీ అయింది",
+"musicOn": "సంగీతం",
+"musicOff": "సంగీతం",
+"scratchCanvas": "రుద్ది తేదీ చూడండి"
+},
+"hi": {
+"gateKicker": "विवाह निमंत्रण",
+"gateHint": "खोलने के लिए मुहर को छुएँ",
+"verse": "यह बात प्रभु की ओर से हुई है (उत्पत्ति 24:50)",
+"fullNames": "जे. प्रिंस सोलोमन ♡ एस. डेल्सी मर्लिन",
+"heroWhen": "शुक्रवार · शाम 5 बजे · पल्लावरम",
+"scrollCue": "निमंत्रण पढ़ें",
+"invEyebrow": "निमंत्रण पत्र",
+"invOpen": "आदरणीय महानुभाव, सप्रेम नमस्कार। प्रभु यीशु मसीह के महान अनुग्रह से शुक्रवार, 20 नवंबर 2026 को शाम 5 बजे",
+"groomName": "जे. प्रिंस सोलोमन",
+"sonOf": "सुपुत्र",
+"groomParents": "श्री P. जॉन सेल्वराज – श्रीमती S. अमुथा",
+"with": "एवं",
+"brideName": "एस. डेल्सी मर्लिन",
+"daughterOf": "सुपुत्री",
+"brideParents": "श्री R. सैमुअल मनोगर – श्रीमती S. जूलियट अक्सल",
+"invClose": "का शुभ विवाह, बड़ों द्वारा निश्चित होकर, नं. 11, पेरियार नगर, नागलकेनी स्थित <b>ECI सेंट पॉल चर्च</b> में संपन्न होगा। इस विवाह आराधना में तथा उसके पश्चात पल्लावरम स्थित <b>सिवंती आदित्तनार कल्याण मंडपम</b> में शाम 7:00 बजे होने वाले सभी समारोहों में आप सपरिवार पधारकर वर-वधू को आशीर्वाद दें, यही हमारा सप्रेम निवेदन है।",
+"saveEyebrow": "तारीख याद रखें",
+"scratchTitle": "तारीख जानने के लिए खुरचें",
+"friday": "शुक्रवार",
+"monthYear": "नवंबर 2026",
+"scratchHr": "विवाह आराधना शाम 5:00 बजे",
+"scratchHint": "कार्ड पर उंगली से रगड़ें",
+"scratchDone": "वहीं मिलते हैं!",
+"countEyebrow": "उलटी गिनती",
+"countTitle": "शुभ विवाह में अभी बाकी हैं",
+"days": "दिन",
+"hours": "घंटे",
+"minutes": "मिनट",
+"seconds": "सेकंड",
+"countDone": "आज विवाह का दिन है। प्रभु की स्तुति हो।",
+"handsCap": "बहुप्रतीक्षित वह विशेष दिन",
+"pathsEyebrow": "दो राहें",
+"pathsTitle": "तिरुप्पुर और चेन्नई, एक ही वेदी पर",
+"pathsLede": "नीचे स्क्रॉल करें और दो तितलियों को पल्लावरम में मिलते देखें।",
+"princeNote": "तिरुप्पुर से। सिविल इंजीनियर (B.Tech)। बेंगलुरु में K12 टेक्नो सर्विसेज़ में कार्यरत।",
+"delsyNote": "चेन्नई से। माइक्रोबायोलॉजी स्नातक (B.Sc)। चेन्नई में एक्सेंचर में कार्यरत।",
+"dayEyebrow": "कार्यक्रम",
+"dayTitle": "शुक्रवार, 20 नवंबर 2026",
+"evening": "शाम",
+"kindWedding": "विवाह आराधना",
+"church": "ECI सेंट पॉल चर्च",
+"churchAddr": "नं. 11, पेरियार नगर, नागलकेनी, पल्लावरम, चेन्नई 600044",
+"directions": "रास्ता",
+"addCal": "कैलेंडर में जोड़ें",
+"kindReception": "स्वागत समारोह",
+"hall": "सिवंती आदित्तनार कल्याण मंडपम",
+"hallAddr": "पल्लावरम, चेन्नई। शाम 7:00 बजे से",
+"galEyebrow": "यादगार पल",
+"galTitle": "प्रेम और खुशी का उत्सव",
+"cap1": "दो दिल, एक धन्य शुरुआत",
+"cap2": "साथ-साथ, मुस्कुराते हुए भविष्य की ओर",
+"cap3": "हर मौसम में हाथों में हाथ",
+"dearGuest": "प्रिय अतिथि",
+"letterBody": "आपकी प्रार्थनाएँ और उपस्थिति हमारे लिए अनमोल हैं। परमेश्वर की उपस्थिति में हम जिस दिन नया जीवन आरंभ कर रहे हैं, उस दिन अपने परिवार सहित पधारकर हमें आशीर्वाद दें।",
+"wishEyebrow": "आपका आशीर्वाद",
+"wishTitle": "वर-वधू को आशीर्वाद दें",
+"wishLede": "व्यक्तिगत रूप से नहीं आ सकते? अपनी शुभकामनाएँ WhatsApp पर परिवार को भेजें। इस पेज पर कहीं भी छूकर एक तितली उड़ाएँ।",
+"waBtn": "WhatsApp पर शुभकामनाएँ भेजें",
+"footer": "सप्रेम, श्री P. जॉन सेल्वराज – श्रीमती S. अमुथा एवं श्री R. सैमुअल मनोगर – श्रीमती S. जूलियट अक्सल एवं परिवारजन।",
+"share": "निमंत्रण साझा करें",
+"dearP": "प्रिय",
+"numCopied": "नंबर कॉपी हो गया",
+"numSelected": "नंबर चुना गया",
+"linkCopied": "लिंक कॉपी हो गया",
+"musicOn": "संगीत",
+"musicOff": "संगीत",
+"scratchCanvas": "खुरचकर तारीख देखें"
+},
+"ta": {
+"dearP": "அன்புள்ள",
+"numCopied": "நகலெடுக்கப்பட்டது",
+"numSelected": "எண் தேர்ந்தெடுக்கப்பட்டது",
+"linkCopied": "இணைப்பு நகலெடுக்கப்பட்டது",
+"musicOn": "இசை",
+"musicOff": "இசை",
+"scratchCanvas": "சுரண்டி தேதியைக் காணுங்கள்",
+"scratchDone": "அங்கே சந்திப்போம்!"
+},
+"en": {
+"dearP": "Dear",
+"numCopied": "Number copied",
+"numSelected": "Number selected",
+"linkCopied": "Link copied",
+"musicOn": "Music on",
+"musicOff": "Music off",
+"scratchCanvas": "SCRATCH TO REVEAL",
+"scratchDone": "See you there!"
+}
+};
+  var LANGS=['en','ta','kn','ml','te','hi'];
+  var CANVAS_FONT={ta:'"Noto Serif Tamil"',kn:'"Noto Serif Kannada"',ml:'"Noto Serif Malayalam"',te:'"Noto Serif Telugu"',hi:'"Noto Serif Devanagari"'};
+  var slots=[].slice.call(document.querySelectorAll('x-t[data-k]'));
+  slots.forEach(function(n){ n._ta=n.innerHTML; });
+  var langSel=document.getElementById('lang');
+  function T(k){ return (I18N[root.lang]&&I18N[root.lang][k]) || I18N.en[k]; }
+  function fill(n){
+    var t=I18N[root.lang], k=n.getAttribute('data-k');
+    n.innerHTML = (t && t[k]!=null && root.lang!=='ta') ? t[k] : n._ta;
+  }
+  function applyLang(l){
+    if(LANGS.indexOf(l)<0) l='en';
+    root.lang=l; langSel.value=l;
+    slots.forEach(fill);
+    if(guest){
+      document.getElementById('guestTa').textContent=T('dearP')+' '+guest+',';
+      document.querySelector('[data-k="dearGuest"]').textContent=T('dearP')+' '+guest;
+    }
+    try{ localStorage.setItem('pd-lang',l); }catch(e){}
+    document.dispatchEvent(new Event('langchange'));
+  }
+  var lang=null;
+  try{ lang=new URLSearchParams(location.search).get('lang'); }catch(e){}
+  if(LANGS.indexOf(lang)<0){ lang=null; try{ lang=localStorage.getItem('pd-lang'); }catch(e){} }
+  if(!lang){ var nav=(navigator.language||'en').slice(0,2); lang=LANGS.indexOf(nav)>=0?nav:'en'; }
+  var guest='';
+  try{ guest=(new URLSearchParams(location.search).get('to')||'').trim().slice(0,60); }catch(e){}
+  applyLang(lang);
+  langSel.addEventListener('change',function(){ applyLang(langSel.value); });
+
+  /* ---------- toast + copy ---------- */
+  var toastEl=document.getElementById('toast'), tt;
+  function toast(msg){ toastEl.textContent=msg; toastEl.classList.add('show'); clearTimeout(tt); tt=setTimeout(function(){toastEl.classList.remove('show')},1800); }
+  document.querySelectorAll('[data-copy]').forEach(function(b){
+    b.addEventListener('click',function(ev){
+      ev.stopPropagation();
+      var v=b.getAttribute('data-copy');
+      var done=function(){ toast(T('numCopied')); };
+      var fallback=function(){ var r=document.createRange(); r.selectNodeContents(b.previousSibling); var s=getSelection(); s.removeAllRanges(); s.addRange(r); toast(T('numSelected')); };
+      try{ navigator.clipboard.writeText(v).then(done,fallback); }catch(e){ fallback(); }
+    });
+  });
+
+  /* ---------- links ---------- */
+  function gcal(title,start,end,loc,details){
+    return 'https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent(title)+'&dates='+start+'/'+end+'&location='+encodeURIComponent(loc)+'&details='+encodeURIComponent(details);
+  }
+  document.getElementById('calChurch').href=gcal('Wedding of Prince & Delsy','20261120T113000Z','20261120T130000Z','ECI St. Paul Church, No. 11 Periyar Nagar, Nagalkeni, Pallavaram, Chennai 600044','Holy matrimony of J. Prince Solomon and S. Delsy Merlyn. Directions: https://maps.app.goo.gl/E1ExuKzxF5a79MKT9');
+  document.getElementById('calReception').href=gcal('Reception: Prince & Delsy','20261120T133000Z','20261120T163000Z','Sivandhi Adhithanar Kalyana Mandapam, Pallavaram, Chennai','Wedding reception from 7:00 PM. Directions: https://maps.app.goo.gl/BoqHxkh6De4iS7Qy6');
+  /* ---------- personal greeting: pd.html?to=Ravi%20Uncle%20%26%20Family ---------- */
+  if(guest){
+    var gEn=document.getElementById('guestEn'), gTa=document.getElementById('guestTa');
+    gEn.textContent='Dear '+guest+',';
+    gEn.hidden=false; gTa.hidden=false;
+    document.getElementById('dearEn').textContent='Dear '+guest; applyLang(root.lang);
+  }
+  document.getElementById('wa').href='https://wa.me/917708927031?text='+encodeURIComponent('Heartfelt congratulations to Prince & Delsy! May God bless your marriage with love, joy and peace. 🦋'+(guest?'\n— '+guest:''));
+
+  /* ---------- share (without the guest's name) ---------- */
+  document.getElementById('share').addEventListener('click',function(ev){
+    ev.stopPropagation();
+    var url=location.origin+location.pathname;
+    var data={title:'Prince & Delsy · Wedding Invitation',text:'You are invited to the wedding of Prince & Delsy · Friday, 20 November 2026, 5 PM · Pallavaram, Chennai 🦋',url:url};
+    var copied=function(){ toast(T('linkCopied')); };
+    if(navigator.share){ navigator.share(data).catch(function(){}); return; }
+    try{ navigator.clipboard.writeText(url).then(copied,function(){ prompt('Copy this link',url); }); }catch(e){}
+  });
+
+  /* ---------- countdown ---------- */
+  var target=Date.parse('2026-11-20T17:00:00+05:30');
+  var els={d:document.getElementById('cd-d'),h:document.getElementById('cd-h'),m:document.getElementById('cd-m'),s:document.getElementById('cd-s')};
+  function pad(n){return (n<10?'0':'')+n}
+  function tick(){
+    var diff=target-Date.now();
+    if(diff<=0){ document.getElementById('clock').hidden=true; document.getElementById('cd-done').hidden=false; return; }
+    var s=Math.floor(diff/1000);
+    els.d.textContent=Math.floor(s/86400); els.h.textContent=pad(Math.floor(s%86400/3600));
+    els.m.textContent=pad(Math.floor(s%3600/60)); els.s.textContent=pad(s%60);
+  }
+  tick(); setInterval(tick,1000);
+
+  /* ---------- reveal ---------- */
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.remove('pending'); io.unobserve(e.target);} }); },{rootMargin:'0px 0px -10% 0px'});
+    document.querySelectorAll('.rise').forEach(function(el){
+      var r=el.getBoundingClientRect();
+      if(r.top>innerHeight){ el.classList.add('pending'); io.observe(el); }
+    });
+  }
+
+  /* ---------- journey butterflies ---------- */
+  var pA=document.getElementById('pathA'), pB=document.getElementById('pathB');
+  var bA=document.getElementById('bfA'), bB=document.getElementById('bfB');
+  var art=document.getElementById('journeyArt');
+  var LA=pA.getTotalLength(), LB=pB.getTotalLength();
+  function place(use,path,L,t){
+    var p=path.getPointAtLength(L*t), q=path.getPointAtLength(Math.min(L, L*t+1));
+    var ang=Math.atan2(q.y-p.y,q.x-p.x)*180/Math.PI+90;
+    if(t>=.999) ang=0;
+    use.setAttribute('transform','translate('+p.x+' '+(p.y-(t>=.999?44:0))+') rotate('+ang+')');
+  }
+  var jPending=false;
+  function journey(){
+    jPending=false;
+    var r=art.getBoundingClientRect(), vh=innerHeight;
+    var t=(vh*0.85 - r.top)/(r.height+vh*0.25);
+    t=Math.max(0,Math.min(1,t));
+    if(reduce) t=1;
+    place(bA,pA,LA,t*0.999+(t>=1?0.001:0)); place(bB,pB,LB,t*0.999+(t>=1?0.001:0));
+    if(t>=1){ bA.setAttribute('transform','translate(184 248) rotate(-14)'); bB.setAttribute('transform','translate(216 248) rotate(14)'); }
+  }
+  journey();
+  addEventListener('scroll',function(){ if(!jPending){ jPending=true; requestAnimationFrame(journey);} },{passive:true});
+  addEventListener('resize',journey);
+
+  /* ---------- sky: canvas butterflies ---------- */
+  var cv=document.getElementById('sky'), ctx=cv.getContext('2d'), dpr=1, W=0, H=0;
+  var upper=new Path2D('M0 0 C-5 -13 -19 -17 -18 -6 C-17 1 -8 2 0 0Z');
+  var lower=new Path2D('M0 0 C-5 4 -15 11 -10 14 C-5 16 -2 8 0 0Z');
+  var palettes=[['#AFC9F1','#2F62C8'],['#CFE0F8','#4B7FDB'],['#9DB9EC','#1D428F'],['#DCE8FA','#6E95DE']];
+  function resize(){ dpr=Math.min(2,window.devicePixelRatio||1); W=innerWidth; H=innerHeight; cv.width=W*dpr; cv.height=H*dpr; }
+  resize(); addEventListener('resize',resize);
+  var flock=[];
+  function make(x,y,burst){
+    var a=Math.random()*Math.PI*2, sp=burst? 2.5+Math.random()*4 : .6+Math.random()*.6;
+    return {x:x,y:y,vx:Math.cos(a)*sp,vy:Math.sin(a)*sp-(burst?1.5:0),dir:a,
+      size:burst? 9+Math.random()*9 : 8+Math.random()*7, ph:Math.random()*6.28, fs:.18+Math.random()*.1,
+      pal:palettes[(Math.random()*palettes.length)|0], life:burst? 520+Math.random()*400 : Infinity, age:0};
+  }
+  function drawOne(b,t){
+    var flap = reduce ? 1 : (0.25 + 0.75*Math.abs(Math.cos(b.ph)));
+    var heading=Math.atan2(b.vy,b.vx)+Math.PI/2;
+    var fade = b.life===Infinity ? 1 : Math.max(0,Math.min(1,(b.life-b.age)/120));
+    ctx.save(); ctx.translate(b.x,b.y); ctx.rotate(heading); ctx.scale(b.size/18,b.size/18); ctx.globalAlpha=.9*fade;
+    var g=ctx.createLinearGradient(-18,-16,0,10); g.addColorStop(0,b.pal[0]); g.addColorStop(1,b.pal[1]);
+    for(var side=-1; side<=1; side+=2){
+      ctx.save(); ctx.scale(side===-1?flap:-flap,1);
+      ctx.fillStyle=g; ctx.fill(upper); ctx.fillStyle=b.pal[1]; ctx.fill(lower);
+      ctx.lineWidth=.7; ctx.strokeStyle='rgba(20,39,74,.7)'; ctx.stroke(upper); ctx.stroke(lower);
+      ctx.restore();
+    }
+    ctx.fillStyle='#14274A'; ctx.beginPath(); ctx.ellipse(0,1,1.3,8,0,0,Math.PI*2); ctx.fill();
+    ctx.restore();
+  }
+  var running=false;
+  function step(){
+    ctx.setTransform(dpr,0,0,dpr,0,0); ctx.clearRect(0,0,W,H);
+    for(var i=flock.length-1;i>=0;i--){
+      var b=flock[i]; b.age++;
+      b.dir += (Math.random()-.5)*.35;
+      var sp=Math.hypot(b.vx,b.vy), target=.9;
+      var nsp=sp+(target-sp)*.02;
+      var cur=Math.atan2(b.vy,b.vx); var na=cur+(Math.sin(b.dir)*.06);
+      b.vx=Math.cos(na)*nsp; b.vy=Math.sin(na)*nsp - .01;
+      b.x+=b.vx; b.y+=b.vy; b.ph+=b.fs*(1+sp*.3);
+      if(b.life===Infinity){
+        if(b.x<-30)b.x=W+30; if(b.x>W+30)b.x=-30; if(b.y<-30)b.y=H+30; if(b.y>H+30)b.y=-30;
+      }
+      if(b.age>b.life || (b.life!==Infinity && (b.y<-60||b.x<-60||b.x>W+60))){ flock.splice(i,1); continue; }
+      drawOne(b);
+    }
+    if(flock.length){ requestAnimationFrame(step); } else { running=false; ctx.clearRect(0,0,W,H); }
+  }
+  function go(){ if(!running){ running=true; requestAnimationFrame(step);} }
+  function ambient(){
+    if(reduce) return;
+    var n = W<600 ? 3 : 5;
+    for(var i=0;i<n;i++) flock.push(make(Math.random()*W, Math.random()*H, false));
+    go();
+  }
+  function burst(x,y,n){
+    if(reduce) return;
+    for(var i=0;i<n;i++) flock.push(make(x,y,true));
+    if(flock.length>60) flock.splice(0,flock.length-60);
+    go();
+  }
+  document.addEventListener('pointerdown',function(e){
+    if(e.target.closest('a,button,input,.gate,.scratch,.track')) return;
+    burst(e.clientX,e.clientY,1+((Math.random()*2)|0));
+  });
+
+  /* ---------- finale: a flock rises once the guest reaches the end ---------- */
+  (function(){
+    var foot=document.querySelector('footer'), done=false;
+    if(!('IntersectionObserver' in window) || reduce) return;
+    var fio=new IntersectionObserver(function(es){
+      if(done || !es[0].isIntersecting) return;
+      done=true; fio.disconnect();
+      for(var k=0;k<7;k++) (function(k){
+        setTimeout(function(){ burst(innerWidth*(.1+.8*Math.random()), innerHeight-20, 3); }, k*260);
+      })(k);
+    },{threshold:.6});
+    fio.observe(foot);
+  })();
+
+  /* ---------- hero photo tilts toward the pointer ---------- */
+  (function(){
+    var ph=document.querySelector('.hero-photo');
+    if(!ph || reduce) return;
+    function tilt(e){
+      var r=ph.getBoundingClientRect();
+      var x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5;
+      ph.style.setProperty('--ty',(x*12).toFixed(2)+'deg');
+      ph.style.setProperty('--tx',(-y*10).toFixed(2)+'deg');
+    }
+    function reset(){ ph.style.setProperty('--tx','0deg'); ph.style.setProperty('--ty','0deg'); }
+    ph.addEventListener('pointermove',tilt);
+    ph.addEventListener('pointerleave',reset);
+    ph.addEventListener('pointerup',reset);
+    ph.addEventListener('pointercancel',reset);
+  })();
+
+  /* ---------- music (YouTube, starts at 0:20) ---------- */
+  var YT_ID='MbLpZXIZZOg', YT_START=20;
+  var mBtn=document.getElementById('music'), mLabel=document.getElementById('musicLabel');
+  var player=null, ready=false, wantMusic=false, playing=false;
+  function setBtn(){
+    mBtn.classList.toggle('on',playing); mBtn.setAttribute('aria-pressed',playing?'true':'false');
+    mLabel.textContent = T(playing?'musicOn':'musicOff');
+  }
+  function playMusic(){
+    wantMusic=true;
+    if(!ready) return;
+    try{ player.unMute(); player.setVolume(70); if(player.getCurrentTime()<YT_START) player.seekTo(YT_START,true); player.playVideo(); }catch(e){}
+  }
+  function pauseMusic(){ wantMusic=false; try{ player.pauseVideo(); }catch(e){} }
+  mBtn.addEventListener('click',function(){ if(playing) pauseMusic(); else playMusic(); });
+  window.onYouTubeIframeAPIReady=function(){
+    player=new YT.Player('ytPlayer',{
+      width:200,height:200,videoId:YT_ID,
+      playerVars:{start:YT_START,origin:/^https?:/.test(location.protocol)?location.origin:undefined,autoplay:0,controls:0,disablekb:1,playsinline:1,rel:0,modestbranding:1,fs:0,iv_load_policy:3},
+      events:{
+        onReady:function(){ ready=true; setBtn(); if(wantMusic) playMusic(); },
+        onStateChange:function(e){
+          if(e.data===YT.PlayerState.ENDED){ player.seekTo(YT_START,true); player.playVideo(); return; }
+          playing = e.data===YT.PlayerState.PLAYING || e.data===YT.PlayerState.BUFFERING&&playing;
+          setBtn();
+        },
+        onError:function(e){ ready=false; playing=false; mBtn.classList.remove('on'); mLabel.textContent='Music unavailable'; if(window.console) console.warn('YouTube player error',e&&e.data); }
+      }
+    });
+  };
+  (function(){ var s=document.createElement('script'); s.src='https://www.youtube.com/iframe_api'; s.async=true; s.onerror=function(){ mLabel.textContent='Music unavailable'; }; document.head.appendChild(s); })();
+  document.addEventListener('langchange',setBtn);
+
+  /* ---------- scratch to reveal ---------- */
+  (function(){
+    var box=document.getElementById('scratch'), sc=document.getElementById('scratchCv'), sx=sc.getContext('2d');
+    var revealed=false, drawing=false, last=null, moves=0, sw=0, sh=0, sd=1;
+    function paint(){
+      if(revealed) return;
+      sd=Math.min(2,window.devicePixelRatio||1); sw=box.clientWidth; sh=box.clientHeight;
+      sc.width=sw*sd; sc.height=sh*sd; sx.setTransform(sd,0,0,sd,0,0);
+      sx.globalCompositeOperation='source-over';
+      var g=sx.createLinearGradient(0,0,sw,sh);
+      g.addColorStop(0,'#1D428F'); g.addColorStop(.45,'#3E74D8'); g.addColorStop(.55,'#8FB2EC'); g.addColorStop(.65,'#3E74D8'); g.addColorStop(1,'#14274A');
+      sx.fillStyle=g; sx.fillRect(0,0,sw,sh);
+      // foil speckle
+      for(var i=0;i<900;i++){ sx.fillStyle='rgba(255,255,255,'+(Math.random()*.12)+')'; sx.fillRect(Math.random()*sw,Math.random()*sh,1.4,1.4); }
+      // butterfly motif
+      var up=new Path2D('M0 0 C-5 -13 -19 -17 -18 -6 C-17 1 -8 2 0 0Z'), lo=new Path2D('M0 0 C-5 4 -15 11 -10 14 C-5 16 -2 8 0 0Z');
+      for(var k=0;k<14;k++){
+        sx.save(); sx.translate(Math.random()*sw,Math.random()*sh); sx.rotate((Math.random()-.5)*1.2); var s=.5+Math.random()*.7; sx.scale(s,s);
+        sx.fillStyle='rgba(255,255,255,.10)';
+        [1,-1].forEach(function(d){ sx.save(); sx.scale(d,1); sx.fill(up); sx.fill(lo); sx.restore(); });
+        sx.restore();
+      }
+      // gold frame + label
+      sx.strokeStyle='rgba(214,175,98,.8)'; sx.lineWidth=1; sx.strokeRect(12.5,12.5,sw-25,sh-25);
+      sx.fillStyle='#F5F8FC'; sx.textAlign='center'; sx.textBaseline='middle';
+      var ta=root.lang!=='en';
+      sx.font='400 '+Math.round(Math.min(sw*.13,64))+'px "Pinyon Script", cursive';
+      sx.fillText('PD', sw/2, sh*.4);
+      sx.font=(ta?'600 16px '+CANVAS_FONT[root.lang]+', serif':'700 13px Mulish, sans-serif');
+      if(!ta && sx.letterSpacing!==undefined) sx.letterSpacing='4px';
+      sx.fillText(T('scratchCanvas'), sw/2, sh*.66);
+      if(sx.letterSpacing!==undefined) sx.letterSpacing='0px';
+    }
+    function pos(e){ var r=sc.getBoundingClientRect(); return {x:e.clientX-r.left,y:e.clientY-r.top}; }
+    function scratch(p){
+      sx.globalCompositeOperation='destination-out';
+      sx.lineCap='round'; sx.lineJoin='round'; sx.lineWidth=Math.max(34,sw*.09);
+      sx.beginPath(); sx.moveTo((last||p).x,(last||p).y); sx.lineTo(p.x,p.y); sx.stroke();
+      sx.beginPath(); sx.arc(p.x,p.y,sx.lineWidth/2,0,Math.PI*2); sx.fill();
+      last=p; if(++moves%8===0) check();
+    }
+    function check(){
+      var d=sx.getImageData(0,0,sc.width,sc.height).data, clear=0, n=0;
+      for(var i=3;i<d.length;i+=4*48){ n++; if(d[i]<40) clear++; }
+      if(clear/n>0.45) done();
+    }
+    function done(){
+      if(revealed) return; revealed=true; sc.classList.add('done');
+      document.getElementById('scratchHintEn').textContent='See you there!';
+      var hint=document.querySelector('[data-k="scratchHint"]');
+      hint.setAttribute('data-k','scratchDone'); hint._ta=I18N.ta.scratchDone; fill(hint);
+      var r=box.getBoundingClientRect(); burst(r.left+r.width/2, r.top+r.height/2, W<600?14:22);
+      if(navigator.vibrate) try{ navigator.vibrate(30); }catch(e){}
+    }
+    sc.addEventListener('pointerdown',function(e){ drawing=true; last=null; try{ sc.setPointerCapture(e.pointerId); }catch(_){} scratch(pos(e)); e.preventDefault(); });
+    sc.addEventListener('pointermove',function(e){ if(drawing) scratch(pos(e)); });
+    ['pointerup','pointercancel','pointerleave'].forEach(function(t){ sc.addEventListener(t,function(){ drawing=false; last=null; if(!revealed) check(); }); });
+    sc.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); done(); } });
+    sc.tabIndex=0;
+    paint();
+    if(document.fonts && document.fonts.ready) document.fonts.ready.then(paint);
+    if('ResizeObserver' in window) new ResizeObserver(function(){ if(!revealed && box.clientWidth!==sw) paint(); }).observe(box);
+    document.addEventListener('langchange',function(){ if(!revealed) paint(); });
+  })();
+
+  /* ---------- gallery ---------- */
+  (function(){
+    var track=document.getElementById('track'), slides=track.children, dots=document.getElementById('dots').children;
+    function idx(){ var c=track.scrollLeft+track.clientWidth/2, best=0, bd=1e9;
+      for(var i=0;i<slides.length;i++){ var s=slides[i], m=s.offsetLeft+s.offsetWidth/2-track.offsetLeft; var d=Math.abs(m-c); if(d<bd){bd=d;best=i;} } return best; }
+    function go(i){ i=(i+slides.length)%slides.length; var s=slides[i]; track.scrollTo({left:s.offsetLeft-track.offsetLeft-(track.clientWidth-s.offsetWidth)/2,behavior:reduce?'auto':'smooth'}); }
+    var raf=0; track.addEventListener('scroll',function(){ cancelAnimationFrame(raf); raf=requestAnimationFrame(function(){ var k=idx(); for(var i=0;i<dots.length;i++) dots[i].classList.toggle('on',i===k); }); },{passive:true});
+    document.getElementById('gPrev').addEventListener('click',function(){ go(idx()-1); });
+    document.getElementById('gNext').addEventListener('click',function(){ go(idx()+1); });
+  })();
+
+  /* ---------- gate ---------- */
+  var gate=document.getElementById('gate'), seal=document.getElementById('seal');
+  root.classList.add('locked');
+  // days-to-go line on the cover
+  (function(){
+    var left=Math.ceil((target-Date.now())/864e5);
+    if(left>0){ document.getElementById('gateDays').textContent=left; document.getElementById('gateLeft').hidden=false; }
+  })();
+
+  // drifting gold motes; while the seal charges they are drawn into it
+  var mc=document.getElementById('motes'), mx=mc.getContext('2d'), motes=[], mRaf=0, pull=null, par={x:0,y:0};
+  function sizeMotes(){
+    var d=Math.min(devicePixelRatio||1,2); mc.width=innerWidth*d; mc.height=innerHeight*d; mx.setTransform(d,0,0,d,0,0);
+  }
+  function mote(){ return {x:Math.random()*innerWidth, y:Math.random()*innerHeight, r:.6+Math.random()*1.8, v:.15+Math.random()*.45, ph:Math.random()*6.28, z:.3+Math.random()*.7}; }
+  function drawMotes(){
+    mx.clearRect(0,0,innerWidth,innerHeight);
+    for(var i=0;i<motes.length;i++){
+      var m=motes[i];
+      if(pull){ m.x+=(pull.x-m.x)*.07; m.y+=(pull.y-m.y)*.07; }
+      else { m.y-=m.v; m.ph+=.02; m.x+=Math.sin(m.ph)*.25; if(m.y<-10){ m.y=innerHeight+10; m.x=Math.random()*innerWidth; } }
+      var px=m.x+par.x*m.z*18, py=m.y+par.y*m.z*12;
+      var a=.35+.45*Math.abs(Math.sin(m.ph*1.7));
+      mx.beginPath(); mx.fillStyle='rgba(214,175,98,'+(a*.25)+')'; mx.arc(px,py,m.r*3.2,0,6.283); mx.fill();
+      mx.beginPath(); mx.fillStyle='rgba(232,198,120,'+a+')'; mx.arc(px,py,m.r,0,6.283); mx.fill();
+    }
+    mRaf=requestAnimationFrame(drawMotes);
+  }
+  if(!reduce){
+    sizeMotes(); for(var mi=0;mi<(innerWidth<600?38:64);mi++) motes.push(mote());
+    addEventListener('resize',sizeMotes);
+    gate.addEventListener('pointermove',function(e){ par.x=e.clientX/innerWidth-.5; par.y=e.clientY/innerHeight-.5; });
+    drawMotes();
+  }
+
+  // tapping the seal charges a gold ring, then the wings fly
+  var ring=document.getElementById('sealRing'), charging=false;
+  function openGate(){
+    if(charging || gate.classList.contains('open')) return;
+    charging=true;
+    playMusic();
+    var r=seal.getBoundingClientRect(), cx=r.left+r.width/2, cy=r.top+r.height/2;
+    if(reduce){ release(); return; }
+    gate.classList.add('charging'); pull={x:cx-par.x*18,y:cy-par.y*12};
+    if(navigator.vibrate) try{ navigator.vibrate(15); }catch(e){}
+    var t0=performance.now();
+    (function fillRing(t){
+      var k=Math.min(1,(t-t0)/850);
+      ring.style.strokeDashoffset=(465*(1-k*k*(3-2*k))).toFixed(1);
+      if(k<1) requestAnimationFrame(fillRing); else release();
+    })(t0);
+    function release(){
+      gate.classList.remove('charging'); gate.classList.add('open'); pull=null; motes.length=0;
+      burst(cx, cy, W<600?18:28);
+      if(navigator.vibrate) try{ navigator.vibrate([20,40,30]); }catch(e){}
+      setTimeout(function(){ cancelAnimationFrame(mRaf); gate.classList.add('gone'); root.classList.remove('locked'); ambient(); }, reduce?400:1600);
+    }
+  }
+  seal.addEventListener('click',openGate);
+  gate.addEventListener('click',function(e){ if(e.target===gate||e.target.closest('.half')) openGate(); });
+  addEventListener('keydown',function(e){ if((e.key==='Enter'||e.key===' ') && !gate.classList.contains('open') && document.activeElement===document.body){ e.preventDefault(); openGate(); } });
+})();
+</script>
